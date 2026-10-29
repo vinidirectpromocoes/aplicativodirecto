@@ -11,25 +11,16 @@ A Direct Promoções coloca repositores, auxiliares de depósito, operadores de 
 2. **Informativo**: dicas e orientações para quem faz diárias (gera confiança e seguidores).
 3. **Datas comemorativas**: presença de marca, homenagem a colaboradores e clientes.
 
-## Regra principal: cada post é criado do zero
+## Regra principal: profissional, enxuto e cada post diferente
 
-A dona da conta pediu explicitamente: **nenhum post pode parecer cópia do anterior**. Trocar só cidade e vagas num layout já usado é o erro mais grave desta skill — o feed fica repetitivo e o público para de notar os posts.
+O que a dona da conta pediu, nas palavras dela: algo **"profissional, de empresa"**, sem **"muita informação"** e sem nada **"embaraçoso"** — e **nenhum post igual ao anterior**. As duas coisas valem juntas:
 
-O que **fica igual** em todo post (é isso que faz parecer a mesma marca):
-- logo do carrinho + "DIRECT / PROMOÇÕES";
-- paleta azul (marinho, azul, azul-claro, branco) com amarelo como acento opcional;
-- contatos: WhatsApp 85 99224-5035 e @directpromocoes;
-- tom de voz e qualidade de acabamento.
+1. **Sóbrio e enxuto.** Aparência de comunicação corporativa de RH (grandes varejistas, LinkedIn). Só o essencial: função, local, no máximo um requisito, WhatsApp, @. Muito espaço em branco, um ponto focal, 2–3 cores. Nada de trocadilhos, objetos fantasiados (cupom fiscal, encarte, senha — já reprovados), padrões carregados ou letra manuscrita de destaque.
+2. **Sempre diferente.** Não reaproveite o layout do post anterior trocando só o texto. Varie a **composição** (onde ficam foto, título e CTA), o **fundo** (claro, marinho, foto em tela cheia) e, se quiser, a família da fonte — escolhendo entre os layouts profissionais de `references/conceitos.md` ou criando outro no mesmo espírito.
 
-O que **muda** a cada post (escolha diferente do que está no histórico recente):
-- **conceito criativo** — a ideia central (cupom fiscal, etiqueta de gôndola, crachá, placa de corredor, conversa de WhatsApp…). Banco de ideias em `references/conceitos.md`; inventar um novo é ainda melhor;
-- **composição** — onde ficam título, conteúdo e CTA; alinhamento; elementos inclinados ou retos; grade ou colagem;
-- **fundo** — marinho escuro, azul vivo, branco/claro, foto em tela cheia, dividido em blocos;
-- **tipografia de destaque** — alterne entre Anton, Archivo Black, Bebas Neue, Montserrat Black, Poppins ExtraBold; script (Caveat, Kaushan Script) só como toque;
-- **imagem** — foto, ilustração com ícones/SVG, objeto desenhado em CSS, ou só tipografia;
-- **forma do botão de WhatsApp** — barra branca, pílula verde, adesivo, carimbo, balão de conversa…
+Fica igual em todo post: logo do carrinho + "DIRECT / PROMOÇÕES", paleta azul, contatos (WhatsApp 85 99224-5035, @directpromocoes), tom de voz e acabamento.
 
-Os arquivos em `assets/exemplos/` mostram o **nível de acabamento** esperado e trazem trechos úteis (máscara de foto, botão de WhatsApp, ícones). Use-os como referência, não como ponto de partida para copiar e trocar texto.
+`assets/exemplos/` mostra o nível de acabamento e traz trechos reutilizáveis (logo, botão de WhatsApp, ícones, máscara de foto). Não é um modelo para copiar e trocar texto.
 
 ## Antes de começar
 
@@ -45,11 +36,11 @@ Os arquivos em `assets/exemplos/` mostram o **nível de acabamento** esperado e 
 
 ## Fluxo
 
-1. **Defina o conceito** em uma frase antes de codar (ex.: "cupom fiscal: as vagas são os itens da nota, fundo azul vivo com padrão de carrinhos, título em Archivo Black com marca-texto amarelo"). Se ajudar, busque referências na web (Behance, Dribbble, Pinterest, campanhas de varejo) para o conceito escolhido.
+1. **Defina o layout** em uma frase antes de codar (ex.: "L2: foto na metade de cima, painel marinho arredondado com título, local e WhatsApp em branco, Montserrat"). Se ajudar, busque referências na web (posts de vagas de grandes varejistas, Behance/Dribbble "recruitment post corporate"). Antes de renderizar, corte tudo que não for essencial.
 
 2. **Escreva o HTML do zero** em `marketing/posts/AAAA-MM-DD-<slug>/<formato>.html` (ou na pasta que o usuário indicar):
    - um elemento `.canvas` por imagem, com o tamanho exato (story 1080×1920, feed 1080×1350); carrossel = vários `.canvas`;
-   - fontes do Google Fonts via `<link>`; cores da paleta de `references/marca.md` (pode importar `brand.css` só pelos tokens, se quiser);
+   - fontes do Google Fonts via `<link>` (Poppins, Montserrat ou Inter); cores da paleta de `references/marca.md`;
    - logos e ícones: `logo-carrinho.svg`, `logo-carrinho-branco.svg`, `icone-whatsapp.svg`, `icone-instagram.svg` (caminhos relativos resolvem em `assets/`) e os SVGs de `references/icones.md`;
    - elementos só decorativos (padrões, números gigantes de fundo) com `aria-hidden="true"`.
 
@@ -73,7 +64,9 @@ Os arquivos em `assets/exemplos/` mostram o **nível de acabamento** esperado e 
 
 ## Checklist de qualidade
 
-- **Diferente de verdade**: colocado ao lado dos últimos posts, o novo é reconhecível como outro conceito à primeira vista — não só outra cor ou outro texto.
+- **Parece de empresa**: sóbrio, alinhado, com respiro. Se algo parece brincadeira ou enfeite, tire.
+- **Pouca informação**: dá para entender a arte em 3 segundos? Se há mais de ~25 palavras num story de captação, corte.
+- **Diferente do anterior**: ao lado dos últimos posts, a composição é outra à primeira vista — não só outra cor ou texto.
 - **Uma mensagem por arte**: o título responde "o que é?" em até ~6 palavras.
 - **Hierarquia clara**: título → apoio (cidade, kicker) → detalhes (vagas) → assinatura (WhatsApp, @, logo).
 - **Legível no celular**: corpo ≥ 20px; título ≥ 60px no feed e ≥ 76px no story; contraste alto.
@@ -81,7 +74,6 @@ Os arquivos em `assets/exemplos/` mostram o **nível de acabamento** esperado e 
 - **Nada cortado, sobreposto ou encostado**: margem lateral ≥ 64px; elementos não se atropelam; rosto de foto livre de texto.
 - **Contato conferido dígito a dígito**: `85 99224-5035` e `@directpromocoes`.
 - **Ortografia** pt-BR com acentos; nomes de cidade/bairro corretos.
-- **Sinal de canal oficial** nos posts de captação (ex.: "WhatsApp oficial de cadastro") — golpes com falsas vagas são comuns no Instagram.
 
 ## Linha que não se cruza: anúncio de vaga sem discriminação
 
@@ -89,7 +81,7 @@ Não escreva requisitos de sexo, idade, aparência, estado civil, gravidez, cor 
 
 ## Arquivos da skill
 
-- `references/conceitos.md` — banco de conceitos criativos por tipo de post.
+- `references/conceitos.md` — o que a Direct quer/não quer e os layouts profissionais para alternar.
 - `references/marca.md` — identidade, paleta, fontes permitidas, tom de voz.
 - `references/tipos-de-post.md` — conteúdo obrigatório por tipo, legendas, calendário de datas, referências.
 - `references/icones.md` — ícones SVG prontos.

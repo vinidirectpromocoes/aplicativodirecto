@@ -8,19 +8,19 @@ Sumário: 1. Captação · 2. Informativo · 3. Datas comemorativas · 4. Legend
 
 **Objetivo:** fazer a pessoa certa chamar no WhatsApp. Tudo na arte serve a isso.
 
-Estrutura (de cima para baixo):
-1. Logo + toque humano ("Junte-se ao nosso time!").
-2. Kicker: "VAGAS ABERTAS" / "OPORTUNIDADE" / "DIÁRIAS".
-3. Título-pergunta que filtra o público: "TEM EXPERIÊNCIA EM **SUPERMERCADO?**", "JÁ FAZ **DIÁRIAS?**", "QUER TRABALHAR COMO **REPOSITOR?**".
-4. Pílula com a cidade/região: "Oportunidades em **AQUIRAZ - CE**".
-5. Cartão "ESTAMOS CONTRATANDO" com 1–3 funções (story) ou 1–4 (feed). Setores como chips (Mercearia, Hortifruti, Frios, Açougue, Padaria).
-6. Requisito positivo, em uma linha: "Com experiência em supermercado ou que já faz diárias".
-7. Frase de ação: "Envie seu currículo e faça seu **cadastro**…".
-8. Botão WhatsApp com o número + @directpromocoes.
+Conteúdo obrigatório (e quase só isso):
+1. Logo.
+2. Selo ou linha curta: "Vagas abertas" / "Estamos contratando".
+3. **Título = a função** ("Repositor", "Operador(a) de caixa"), com a segunda função como subtítulo. Alternativa: título-pergunta curto ("Tem experiência em supermercado?").
+4. Local: ícone de pin + "Caucaia e Metrópole – CE".
+5. No máximo **um** requisito ("Experiência em supermercado").
+6. WhatsApp com o número + @directpromocoes.
+
+Deixe de fora da arte (vai na legenda, se precisar): lista de setores, frases de apoio ("envie seu currículo…"), "junte-se ao time", mais de um requisito.
 
 Funções comuns e ícone sugerido (estilo Lucide): Repositor → carrinho; Aux. de depósito → caixa/pacote; Operador de caixa → caixa registradora/cartão; Balconista → loja; Atendimento → pessoas; Açougue/Frios → faca/queijo; Padaria/Gastronomia → chapéu de chef; Promotor(a) de vendas → etiqueta/megafone.
 
-Variações: "VAGA URGENTE" (selo amarelo `--accent`), "Diárias neste fim de semana" (pílula com a data), lista de várias cidades (pílula com 2 linhas).
+Variações: "Vaga urgente" (selo discreto), "Diárias neste fim de semana" (linha com a data), várias cidades (uma linha de local, separadas por "·").
 
 ## 2. Informativo (carrossel)
 
@@ -39,7 +39,7 @@ Para story informativo: use o slide-capa adaptado ao formato `.story` e mande pa
 
 **Objetivo:** homenagem e presença de marca, não venda. Nada de telefone grande; logo e @ discretos na assinatura.
 
-Estrutura: símbolo da data num círculo (ícone de traço) → pílula com a data → "Feliz" em script → nome da data em Anton → mensagem de 1–2 frases ligando a data ao trabalho no supermercado/aos parceiros → assinatura (logo + @).
+Estrutura: símbolo da data ou foto → data → nome da data em destaque → mensagem de 1–2 frases ligando a data ao trabalho no supermercado/aos parceiros → assinatura (logo + @).
 
 - Fundo escuro (exemplo: `assets/exemplos/feed-data-comemorativa.html`): datas institucionais e sóbrias (Trabalhador, Consciência Negra, Independência, Data Magna do Ceará).
 - Fundo claro (exemplos: `story-data-comemorativa.html`, `feed-data-comemorativa-clara.html`): datas afetivas (Mães, Pais, Mulher, Cliente, Crianças, Natal).

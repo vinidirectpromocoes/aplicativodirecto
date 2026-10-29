@@ -25,16 +25,15 @@ Carrinho de compras formado por três barras azuis horizontais (largura decresce
 
 Proporção recomendada: ~70% marinho/azul, ~20% branco, ~10% azul-claro. Datas comemorativas podem trazer uma cor temática (vermelho no Natal, verde-amarelo no 7 de Setembro) como **acento**, sem substituir o azul da marca.
 
-## Tipografia (varie a fonte de destaque entre posts)
-- **Destaque** (títulos): alterne entre Anton, Archivo Black, Bebas Neue, Montserrat Black (900) e Poppins ExtraBold (800). Consulte o histórico para não repetir a do último post.
-- **Texto**: Montserrat, Archivo ou Poppins (500–800). Um conceito pode pedir algo próprio (ex.: Space Mono no cupom fiscal).
-- **Script** (Caveat, Kaushan Script): só um toque humano curto ("Feliz", "Chama a gente!"). No máximo um uso por arte.
-- Todas do Google Fonts, carregadas no `<head>` do post.
+## Tipografia
+- Família sem serifa geométrica: **Poppins**, **Montserrat** ou **Inter** (pode alternar entre posts), em 2–3 pesos (500, 700, 800).
+- Título forte (800, 110–140px no story), subtítulo em azul (700), texto em 500.
+- Evite fontes de efeito (manuscritas, condensadas de cartaz, monoespaçadas) — a Direct prefere um visual corporativo.
 
-## Linguagem visual (constantes x variáveis)
-Constantes: logo do carrinho, paleta azul com acento amarelo, ícones de traço (estilo Lucide, stroke 2), acabamento limpo, botão de WhatsApp sempre com destaque.
+## Linguagem visual
+Constantes: logo do carrinho, paleta azul, ícones de traço (estilo Lucide), muito espaço em branco, botão de WhatsApp em destaque (barra marinho ou azul com círculo verde).
 
-Variáveis a cada post: conceito, composição, fundo, fonte de destaque, uso de foto/ilustração, forma do CTA — ver `references/conceitos.md`. Os elementos dos exemplos (`.glow`, `.glass`, `.pill`, foto fundida à direita) são **um** estilo possível, já usado; não o transforme em padrão.
+Varie a cada post a composição e o fundo seguindo os layouts de `references/conceitos.md`.
 
 ## Tom de voz
 Direto, acolhedor e respeitoso, falando com "você". Valoriza a experiência do trabalhador de supermercado. Frases curtas, verbos de ação ("Faça seu cadastro", "Chame no WhatsApp", "Junte-se ao nosso time"). Evite promessas que a empresa não garante (salário, vaga certa, "contratação imediata") a menos que o usuário confirme.
