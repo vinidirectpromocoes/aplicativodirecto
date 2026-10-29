@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Story Data Comemorativa</title>
+<link rel="stylesheet" href="brand.css">
+<style>
+  /* Versão clara (fundo branco) — boa para datas leves: Dia das Mães, Dia do Cliente, Natal.
+     Para datas sóbrias (luto, Consciência Negra etc.) use o fundo escuro padrão (remova .light). */
+  .canvas{--hl:var(--blue-500)}
+  .wave{position:absolute;left:-10%;width:120%;border-radius:50%}
+  .w1{height:900px;bottom:-470px;background:linear-gradient(90deg,var(--blue-600),var(--blue-500))}
+  .w2{height:900px;bottom:-520px;background:var(--navy-800)}
+  .dots{position:absolute;right:70px;top:300px;width:200px;height:200px;
+    background-image:radial-gradient(var(--sky-400) 3px,transparent 3.5px);background-size:28px 28px;opacity:.6}
+  .logo-wrap{position:absolute;left:0;right:0;top:180px;display:flex;justify-content:center}
+  .content{position:absolute;left:var(--pad);right:var(--pad);top:600px;text-align:center}
+  .date{display:inline-block;font-weight:800;font-size:28px;letter-spacing:6px;color:var(--white);text-transform:uppercase;
+    padding:12px 30px;border-radius:999px;background:var(--hl)}
+  .pre{font-size:96px;margin-top:40px;color:var(--blue-500)}
+  .headline{font-size:150px;color:var(--ink);margin-top:-10px}
+  .msg{margin:40px auto 0;max-width:860px;font-size:34px;color:var(--muted)}
+  .msg strong{color:var(--ink)}
+  .canvas .ig{position:absolute;left:0;right:0;bottom:290px;color:var(--white)}
+</style>
+</head>
+<body>
+<div class="canvas story light">
+  <div class="dots"></div>
+  <div class="wave w1"></div><div class="wave w2"></div>
+  <div class="logo-wrap"><div class="logo"><img src="logo-carrinho.svg" alt=""><div class="name">DIRECT</div><div class="sub">PROMOÇÕES</div></div></div>
+  <div class="content">
+    <div class="date">15 de setembro</div>
+    <div class="pre script">Feliz</div>
+    <h1 class="headline">Dia do Cliente</h1>
+    <p class="msg body">Obrigado aos supermercados parceiros que confiam no nosso trabalho. <strong>Crescer junto com vocês é o que nos move!</strong></p>
+  </div>
+  <div class="ig"><div class="ig-ic"><img src="icone-instagram.svg" alt=""></div>@directpromocoes</div>
+</div>
+</body>
+</html>

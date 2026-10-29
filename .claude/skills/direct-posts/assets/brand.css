@@ -1,0 +1,98 @@
+/* Direct Promoções — base visual compartilhada por todos os templates.
+   Os templates importam este arquivo; mude cores e fontes aqui, não em cada post. */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;600;700;800;900&family=Kaushan+Script&display=swap');
+
+:root{
+  --navy-900:#061334; --navy-800:#0a1f56; --navy-700:#0d2c7a;
+  --blue-600:#1450d8; --blue-500:#1e6bff; --sky-400:#4fb0ff; --sky-300:#8fd0ff; --sky-100:#e6efff;
+  --white:#ffffff; --ink:#0a1f56; --muted:#3a4f86; --text-soft:#d9ecff;
+  --wa:#25d366; --accent:#ffc83d; /* amarelo: só para selos/destaques pontuais */
+  --pad:64px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:var(--navy-900)}
+body{font-family:'Montserrat',sans-serif;color:var(--white);overflow:hidden}
+
+/* Telas */
+.canvas{position:relative;overflow:hidden;
+  background:radial-gradient(120% 70% at 0% 100%,#0f3bb0 0%,transparent 60%),
+             linear-gradient(160deg,var(--navy-800) 0%,var(--navy-900) 100%)}
+.canvas.story{width:1080px;height:1920px}
+.canvas.feed{width:1080px;height:1350px}
+.canvas.square{width:1080px;height:1080px}
+.canvas.light{background:linear-gradient(170deg,#ffffff 0%,#eef4ff 100%);color:var(--ink)}
+
+/* Decoração */
+.glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55;pointer-events:none}
+.glow.blue{background:var(--blue-500)} .glow.sky{background:var(--sky-400);opacity:.35}
+.stripe{position:absolute;height:8px;background:linear-gradient(90deg,var(--sky-400),var(--blue-500) 60%,transparent)}
+
+/* Foto com fusão no fundo (sem bordas duras) */
+.photo{position:absolute;background-position:center top;background-size:cover;background-repeat:no-repeat;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 30%),linear-gradient(180deg,transparent 0%,#000 12%,#000 58%,transparent 86%);
+  -webkit-mask-composite:source-in;mask-composite:intersect}
+
+/* Logo (carrinho em SVG + texto) */
+.logo{display:inline-flex;flex-direction:column;align-items:center}
+.logo img{width:200px;height:auto}
+.logo .name{font-weight:900;font-size:92px;line-height:.9;letter-spacing:2px;margin-top:6px;
+  background:linear-gradient(180deg,#1e6bff,#0d3fb8);-webkit-background-clip:text;color:transparent}
+.logo .sub{font-weight:800;font-size:25px;letter-spacing:5px;color:var(--ink);margin-top:4px}
+.logo.on-dark .name{background:none;color:var(--white)} .logo.on-dark .sub{color:var(--sky-300)}
+.logo.sm img{width:120px} .logo.sm .name{font-size:54px} .logo.sm .sub{font-size:15px;letter-spacing:3px}
+
+.logo-card{position:absolute;left:0;top:0;width:610px;height:330px;background:var(--white);
+  border-bottom-right-radius:180px;padding:62px 0 0 70px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.feed .logo-card{width:500px;height:250px;padding:44px 0 0 56px;border-bottom-right-radius:140px}
+
+/* Tipografia */
+.kicker{display:inline-flex;align-items:center;gap:12px;font-weight:800;font-size:24px;letter-spacing:4px;
+  color:var(--sky-300);text-transform:uppercase}
+.kicker::before{content:"";width:46px;height:5px;border-radius:3px;background:var(--sky-400)}
+.headline{font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:.95}
+.grad-text{background:linear-gradient(180deg,#bfe5ff 0%,var(--sky-400) 55%,#2a8bff 100%);
+  -webkit-background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px rgba(30,107,255,.45))}
+.script{font-family:'Kaushan Script',cursive}
+.body{font-weight:600;font-size:27px;line-height:1.35;color:var(--text-soft)}
+.body strong{color:var(--white);font-weight:800}
+
+/* Componentes */
+.pill{display:inline-flex;align-items:center;gap:18px;padding:16px 30px 16px 18px;border-radius:999px;
+  background:linear-gradient(90deg,var(--blue-500),var(--blue-600));
+  box-shadow:0 12px 30px rgba(20,80,216,.5),inset 0 0 0 2px rgba(255,255,255,.18)}
+.pill .dot{width:58px;height:58px;border-radius:50%;background:var(--white);display:grid;place-items:center}
+.pill .txt{font-weight:600;font-size:22px;line-height:1.1;color:var(--text-soft)}
+.pill .txt strong{display:block;font-weight:900;font-size:40px;color:var(--white);letter-spacing:1px}
+
+.glass{border-radius:34px;padding:30px;background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.06));
+  border:2px solid rgba(143,208,255,.35);backdrop-filter:blur(14px);box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.glass .label{font-weight:800;font-size:22px;letter-spacing:4px;color:var(--sky-300);text-transform:uppercase}
+
+.item{display:flex;align-items:center;gap:22px;margin-top:18px;padding:18px 20px;border-radius:24px;background:var(--white);color:var(--ink)}
+.item .ic{flex:none;width:86px;height:86px;border-radius:22px;display:grid;place-items:center;
+  background:linear-gradient(145deg,var(--blue-500),var(--navy-700))}
+.item h3{font-weight:900;font-size:34px;line-height:1.05;text-transform:uppercase}
+.item p{font-weight:600;font-size:21px;color:var(--muted);margin-top:6px}
+.chips{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.chips span{font-weight:700;font-size:17px;padding:5px 12px;border-radius:999px;background:var(--sky-100);color:var(--blue-600)}
+
+.wa{display:flex;align-items:center;gap:28px;padding:24px 36px 24px 26px;border-radius:32px;
+  background:linear-gradient(100deg,var(--blue-500) 0%,var(--blue-600) 60%,var(--navy-700) 100%);
+  box-shadow:0 24px 60px rgba(20,80,216,.55),inset 0 0 0 3px rgba(143,208,255,.45)}
+.wa .icon{flex:none;width:118px;height:118px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 0 0 8px rgba(37,211,102,.22)}
+.wa .icon img{width:70px;height:70px}
+.wa .sep{width:3px;height:100px;background:rgba(255,255,255,.35);border-radius:2px}
+.wa .t1{font-weight:800;font-size:26px;letter-spacing:3px;color:var(--sky-300);text-transform:uppercase}
+.wa .num{font-weight:900;font-size:84px;line-height:1;letter-spacing:-1px;white-space:nowrap}
+.wa.sm{padding:18px 28px 18px 20px;gap:22px} .wa.sm .icon{width:86px;height:86px} .wa.sm .icon img{width:52px;height:52px}
+.wa.sm .sep{height:72px} .wa.sm .t1{font-size:20px} .wa.sm .num{font-size:60px}
+
+.ig{display:flex;align-items:center;justify-content:center;gap:16px;font-weight:700;font-size:32px;letter-spacing:1px}
+.ig .ig-ic{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;
+  background:radial-gradient(circle at 30% 110%,#fdf497 0%,#fd5949 40%,#d6249f 65%,#285aeb 100%)}
+.ig .ig-ic img{width:32px;height:32px}
+.light .ig{color:var(--ink)}
+
+/* Carrossel: numeração e "arraste" */
+.slide-num{position:absolute;top:56px;right:var(--pad);font-weight:800;font-size:24px;letter-spacing:3px;color:var(--sky-300)}
+.swipe{position:absolute;bottom:56px;right:var(--pad);display:flex;align-items:center;gap:12px;font-weight:700;font-size:24px;color:var(--sky-300)}
