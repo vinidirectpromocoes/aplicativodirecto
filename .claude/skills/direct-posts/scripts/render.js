@@ -38,11 +38,21 @@ const assetsDir = path.resolve(__dirname, '..', 'assets') + '/';
     const ext = path.extname(output) || '.png';
     const base = output.slice(0, output.length - path.extname(output).length);
     const written = [];
+    // Uma arte por vez, sozinha na tela e com a viewport do tamanho dela: com várias
+    // artes empilhadas além da viewport, o Chromium compõe camadas erradas (retângulos fantasma).
     for (let i = 0; i < canvases.length; i++) {
       const file = canvases.length === 1 ? base + ext : `${base}-${i + 1}${ext}`;
+      const size = await page.evaluate(idx => {
+        document.querySelectorAll('.canvas').forEach((c, j) => { c.style.display = j === idx ? '' : 'none'; });
+        const r = document.querySelectorAll('.canvas')[idx].getBoundingClientRect();
+        return { width: Math.ceil(r.width), height: Math.ceil(r.height) };
+      }, i);
+      await page.setViewportSize(size);
+      await page.waitForTimeout(150);
       await canvases[i].screenshot({ path: file });
       written.push(file);
     }
+    await page.evaluate(() => document.querySelectorAll('.canvas').forEach(c => { c.style.display = ''; }));
 
     // Avisa sobre texto que sai da arte (título cortado na borda, CTA fora da tela etc.).
     const overflow = await page.evaluate(() => {

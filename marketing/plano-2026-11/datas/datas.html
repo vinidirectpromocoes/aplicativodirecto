@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Datas Nov Dez</title>
+<link rel="stylesheet" href="brand.css">
+<style>
+  /* Data comemorativa: homenagem, não venda. Pouco texto, um símbolo forte, marca discreta.
+     Troque o símbolo (.symbol) e a cor de destaque (--hl) conforme a data — ver references/tipos-de-post.md */
+  .canvas{--hl:var(--sky-400)}
+  .ring{position:absolute;border-radius:50%;border:3px solid rgba(143,208,255,.18)}
+  .r1{width:900px;height:900px;left:90px;top:120px} .r2{width:640px;height:640px;left:220px;top:250px}
+  .g1{width:640px;height:640px;left:220px;top:250px}
+  .symbol{position:absolute;left:50%;top:250px;transform:translateX(-50%);width:300px;height:300px;border-radius:50%;
+    display:grid;place-items:center;background:linear-gradient(145deg,var(--blue-500),var(--navy-700));
+    box-shadow:0 30px 80px rgba(20,80,216,.55),inset 0 0 0 4px rgba(143,208,255,.45)}
+  .content{position:absolute;left:var(--pad);right:var(--pad);top:620px;text-align:center}
+  .date{display:inline-block;font-weight:800;font-size:26px;letter-spacing:6px;color:var(--hl);text-transform:uppercase;
+    padding:10px 26px;border-radius:999px;border:2px solid rgba(143,208,255,.4)}
+  .pre{font-size:72px;margin-top:26px;color:var(--sky-300)}
+  .headline{font-size:120px;margin-top:-6px}
+  .msg{margin:30px auto 0;max-width:800px;font-size:30px}
+  .sign{position:absolute;left:0;right:0;bottom:60px;display:flex;flex-direction:column;align-items:center;gap:18px}
+  .ig{font-size:24px;color:var(--sky-300)} .ig .ig-ic{width:40px;height:40px}
+  .headline.sm{font-size:104px}
+  .date + .headline{margin-top:28px}
+  .canvas.b2b .symbol{top:200px;width:250px;height:250px} .canvas.b2b .content{top:520px}
+  .cta-b2b{margin:30px auto 0;width:max-content}
+  .cta-b2b .wa{padding:16px 26px 16px 16px;gap:18px} .cta-b2b .wa .icon{width:72px;height:72px} .cta-b2b .wa .icon img{width:42px;height:42px}
+  .cta-b2b .wa .sep{height:60px} .cta-b2b .wa .t1{font-size:18px} .cta-b2b .wa .num{font-size:50px}
+</style>
+</head>
+<body>
+<div class="canvas feed">
+  <div class="glow blue g1"></div>
+  <div class="ring r1"></div><div class="ring r2"></div>
+  <div class="symbol"><svg width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14a6 6 0 0 1 3.5 6"/></svg></div>
+  <div class="content">
+    <div class="date">20 de novembro</div>
+    
+    <h1 class="headline sm">Dia da <span class="grad-text">Consciência Negra</span></h1>
+    <p class="msg body">Respeito, igualdade e oportunidade para todos. <strong>Diversidade que fortalece o nosso time.</strong></p>
+  </div>
+  <div class="sign">
+    <div class="logo on-dark sm"><img src="logo-carrinho-branco.svg" alt=""><div class="name">DIRECT</div><div class="sub">PROMOÇÕES</div></div>
+    <div class="ig"><div class="ig-ic"><img src="icone-instagram.svg" alt=""></div>@directpromocoes</div>
+  </div>
+</div>
+<div class="canvas feed b2b">
+  <div class="glow blue g1"></div>
+  <div class="ring r1"></div><div class="ring r2"></div>
+  <div class="symbol"><svg width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></div>
+  <div class="content">
+    <div class="date">27 de novembro</div>
+    
+    <h1 class="headline">Black <span class="grad-text">Friday</span></h1>
+    <p class="msg body">Sua loja preparada para o maior movimento do ano: <strong>reforce a equipe com promotores, repositores e degustação.</strong></p>
+    <div class="cta-b2b"><div class="wa"><div class="icon"><img src="icone-whatsapp.svg" alt=""></div><div class="sep"></div><div style="text-align:left"><div class="t1">Fale com a Direct</div><div class="num">85 99224-5035</div></div></div></div>
+  </div>
+  <div class="sign">
+    <div class="logo on-dark sm"><img src="logo-carrinho-branco.svg" alt=""><div class="name">DIRECT</div><div class="sub">PROMOÇÕES</div></div>
+    <div class="ig"><div class="ig-ic"><img src="icone-instagram.svg" alt=""></div>@directpromocoes</div>
+  </div>
+</div>
+<div class="canvas feed">
+  <div class="glow blue g1"></div>
+  <div class="ring r1"></div><div class="ring r2"></div>
+  <div class="symbol"><svg width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></div>
+  <div class="content">
+    <div class="date">25 de dezembro</div>
+    <div class="pre script">Feliz</div>
+    <h1 class="headline"><span class="grad-text">Natal</span></h1>
+    <p class="msg body">Obrigado a cada colaborador, cliente e parceiro que fez parte da nossa história este ano. <strong>Boas festas!</strong></p>
+  </div>
+  <div class="sign">
+    <div class="logo on-dark sm"><img src="logo-carrinho-branco.svg" alt=""><div class="name">DIRECT</div><div class="sub">PROMOÇÕES</div></div>
+    <div class="ig"><div class="ig-ic"><img src="icone-instagram.svg" alt=""></div>@directpromocoes</div>
+  </div>
+</div>
+<div class="canvas feed">
+  <div class="glow blue g1"></div>
+  <div class="ring r1"></div><div class="ring r2"></div>
+  <div class="symbol"><svg width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3l1.9 5.1L17 10l-5.1 1.9L10 17l-1.9-5.1L3 10l5.1-1.9z"/><path d="M18 14l.9 2.1L21 17l-2.1.9L18 20l-.9-2.1L15 17l2.1-.9z"/><path d="M18 3v3M16.5 4.5h3"/></svg></div>
+  <div class="content">
+    <div class="date">1º de janeiro</div>
+    <div class="pre script">Feliz</div>
+    <h1 class="headline">Ano-Novo <span class="grad-text">2027</span></h1>
+    <p class="msg body">Que o novo ano traga ainda mais conquistas, parcerias e oportunidades. <strong>Seguimos juntos!</strong></p>
+  </div>
+  <div class="sign">
+    <div class="logo on-dark sm"><img src="logo-carrinho-branco.svg" alt=""><div class="name">DIRECT</div><div class="sub">PROMOÇÕES</div></div>
+    <div class="ig"><div class="ig-ic"><img src="icone-instagram.svg" alt=""></div>@directpromocoes</div>
+  </div>
+</div>
+</body>
+</html>

@@ -38,11 +38,18 @@ A dona da conta aprovou o visual do primeiro story (Aquiraz) e reprovou as tenta
 ## Fluxo
 
 1. **Copie o template** de `assets/templates/` para `marketing/posts/AAAA-MM-DD-<slug>/<formato>.html` (ou a pasta que o usuário indicar):
-   | Tipo | Story | Feed |
-   |---|---|---|
-   | Captação | `story-captacao.html` | `feed-captacao.html` |
-   | Informativo | adapte o slide 1 de `feed-informativo.html` | `feed-informativo.html` (carrossel) |
-   | Data comemorativa | `story-data-comemorativa.html` | `feed-data-comemorativa.html` ou `feed-data-comemorativa-clara.html` |
+   | Tipo | Template |
+   |---|---|
+   | Vagas (story) | `story-captacao.html` |
+   | Vagas (feed) | `feed-captacao.html` |
+   | Ação em loja / case com marca (foto real) | 1º canvas de `feed-acao-em-loja-e-capa-reels.html` |
+   | Capa de Reels | 2º canvas de `feed-acao-em-loja-e-capa-reels.html` (título dentro do centro 1080×1440) |
+   | Data comemorativa (estilo único, marinho) | `feed-datas-estilo-unico.html` — copie um canvas, troque ícone, data, título e mensagem; datas sóbrias sem "Feliz"; datas comerciais (Black Friday) com CTA B2B |
+   | Institucional (quem somos, marcas, trabalhe conosco) | `feed-institucional-fixados.html` |
+   | Informativo (carrossel) | `feed-informativo.html` |
+   | Capas de destaque | `capas-destaques.html` |
+
+   Os templates de data com fundo claro (`*-data-comemorativa*.html`) ficam só como referência antiga — a Direct aprovou **um estilo único marinho** para datas.
 
 2. **Troque foto, copy e local** (ver Regra principal). Mantenha a estrutura e os estilos; mexa só em textos, itens, ícones (`references/icones.md`) e no posicionamento da foto. Se o texto ficar maior (ex.: duas cidades), reduza a fonte daquele elemento no `<style>` do post em vez de mudar o layout.
 
@@ -50,7 +57,7 @@ A dona da conta aprovou o visual do primeiro story (Aquiraz) e reprovou as tenta
    ```bash
    node <skill>/scripts/render.js marketing/posts/<pasta>/story.html marketing/posts/<pasta>/story.png
    ```
-   Cada `.canvas` vira um PNG (carrossel → `feed-1.png`, `feed-2.png`…). O script avisa se algum texto saiu da arte. Precisa de internet para as fontes.
+   Cada `.canvas` vira um PNG (carrossel → `feed-1.png`, `feed-2.png`…), exportado sozinho com a viewport do tamanho dele. O script avisa se algum texto saiu da arte. Precisa de internet para as fontes.
 
 4. **Olhe o PNG** e passe pelo checklist. Ajuste e renderize de novo até ficar limpo — a primeira versão quase sempre tem sobreposição, espaço vazio ou algo na zona de resposta do story.
 
@@ -75,6 +82,14 @@ A dona da conta aprovou o visual do primeiro story (Aquiraz) e reprovou as tenta
 - **Nada cortado, sobreposto ou encostado**: margem lateral ≥ 64px; elementos não se atropelam; rosto de foto livre de texto.
 - **Contato conferido dígito a dígito**: `85 99224-5035` e `@directpromocoes`.
 - **Ortografia** pt-BR com acentos; nomes de cidade/bairro corretos.
+
+## Regras de marca aprovadas no plano de 29/10/2026
+
+- Nome nas artes: **Direct Promoções** — nunca "& Eventos".
+- Logo: carrinho + DIRECT + "— PROMOÇÕES —"; versão branca ou cartão branco em fundo escuro.
+- Público duplo: clientes (supermercados/indústrias) e diaristas. Posts B2B usam "Fale com a Direct"; posts de vaga usam "Cadastro pelo WhatsApp".
+- Divisão de conteúdo: 40% ações em loja/cases · 25% vagas e dicas · 20% equipe/bastidores · 15% datas.
+- Plano completo, bio, links e calendário: `marketing/plano-2026-11/README.md`.
 
 ## Linha que não se cruza: anúncio de vaga sem discriminação
 
