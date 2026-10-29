@@ -15,12 +15,13 @@ A Direct Promoções coloca repositores, auxiliares de depósito, operadores de 
 
 A dona da conta aprovou o visual do primeiro story (Aquiraz) e reprovou as tentativas de layouts novos (um "cupom fiscal" e um corporativo de fundo claro foram considerados "nada a ver" e "amador"). Então:
 
-- **Use sempre o layout dos templates** em `assets/templates/` (fundo marinho com brilhos azuis, logo em cartão branco, frase manuscrita no canto, título em Anton com degradê, pílula de local, cartão de vidro com as funções, botão grande de WhatsApp). Não invente layout novo, não troque fundo nem fontes.
+- **Use sempre o layout dos templates** em `assets/templates/` (fundo marinho com brilhos azuis, logo em cartão branco com "— PROMOÇÕES —", frase manuscrita no canto, título em Anton com degradê, pílula de local, cartão de vidro com as funções, botão grande de WhatsApp). **Sem a linha diagonal** atravessando o topo (a Direct pediu para retirar). Não invente layout novo, não troque fundo nem fontes.
 - **O que muda a cada post** — para não ficar repetido:
-  1. **Foto**: alterne as fotos de `assets/fotos/` (`foto-repositor.jpg`, `foto-repositora.jpg`); não use a mesma do post anterior. Ajuste `background-position`/`right`/`top` da `.photo` para o rosto ficar inteiro e livre de texto.
+  1. **Foto**: alterne as fotos de `assets/fotos/`, sem repetir a do post anterior. Para **repositor e auxiliar de depósito, a Direct prefere foto de homem** (remete ao trabalho braçal): `foto-repositor.jpg` (prateleira), `foto-aux-deposito.jpg` (armazém, paleteira). `foto-repositora.jpg` serve para operador(a) de caixa, atendimento etc. A preferência é só da imagem — o texto continua aberto a todos (ver "Linha que não se cruza"). Ajuste `right`/`top`/`width`/`height` da `.photo` para o rosto ficar inteiro, abaixo do título e sem texto por cima.
   2. **Copy**: título (`.l1` + `.l2`), kicker, frase manuscrita (`.tag`), rótulo do cartão, requisito e frase acima do WhatsApp — escreva uma combinação diferente da do post anterior (banco de frases em `references/conceitos.md`).
   3. **Local e funções** conforme o pedido.
 - Consulte `marketing/posts/historico.md` para saber a foto e as frases usadas por último.
+- Referências visuais aprovadas pela Direct em `references/inspiracao/` (artes de vagas e o logo oficial). Para buscar mais ideias de foto/texto, Pinterest, Designi e Behance são as fontes que a Direct indica — mas a estrutura do layout continua a dos templates.
 
 ## Antes de começar
 
@@ -29,7 +30,7 @@ A dona da conta aprovou o visual do primeiro story (Aquiraz) e reprovou as tenta
 3. Extraia do pedido: **tipo** (captação / informativo / data), **formato** (story, feed ou carrossel), **cidade/região**, **vagas/setores**, **data** e **foto**. Se algo essencial faltar e não houver padrão razoável, pergunte uma vez, de forma curta. Padrões:
    - formato não especificado → **story + feed** (mesma copy adaptada a cada formato); se pediu só um formato, faça só esse e ofereça o outro em uma linha;
    - informativo → carrossel de 3 a 5 slides no feed;
-   - foto não enviada → use uma de `assets/fotos/` diferente da do último post. Se o usuário mandar foto nova, recorte em retrato (~1000×2400, rosto no terço de cima) e salve em `assets/fotos/`. Não dê nome, cargo ou depoimento à pessoa da foto;
+   - foto não enviada → use uma de `assets/fotos/` diferente da do último post. Se o usuário mandar foto nova (inclusive de uma arte pronta), recorte em retrato (~1000×3000, rosto no quarto de cima), apague restos de texto/cartões da arte original com retoque suave (cor amostrada da própria foto) e salve em `assets/fotos/`. Confira o retoque de perto no PNG final. Não dê nome, cargo ou depoimento à pessoa da foto;
    - funções: forma neutra quando couber ("Repositor(a)", "Operador(a) de caixa");
    - localidades: confira o nome certo (ex.: "Metrópole" é bairro de Caucaia — Nova Metrópole/Jurema; escreva "Caucaia e Metrópole – CE");
    - data comemorativa que já passou no ano → avise e prepare para a próxima ocorrência, salvo pedido contrário.

@@ -37,7 +37,9 @@ body{font-family:'Montserrat',sans-serif;color:var(--white);overflow:hidden}
 .logo img{width:200px;height:auto}
 .logo .name{font-weight:900;font-size:92px;line-height:.9;letter-spacing:2px;margin-top:6px;
   background:linear-gradient(180deg,#1e6bff,#0d3fb8);-webkit-background-clip:text;color:transparent}
-.logo .sub{font-weight:800;font-size:25px;letter-spacing:5px;color:var(--ink);margin-top:4px}
+.logo .sub{display:flex;align-items:center;gap:14px;font-weight:800;font-size:25px;letter-spacing:5px;color:var(--ink);margin-top:4px}
+.logo .sub::before,.logo .sub::after{content:"";width:44px;height:3px;border-radius:2px;background:var(--blue-500)}
+.logo.sm .sub::before,.logo.sm .sub::after{width:26px;height:2px}
 .logo.on-dark .name{background:none;color:var(--white)} .logo.on-dark .sub{color:var(--sky-300)}
 .logo.sm img{width:120px} .logo.sm .name{font-size:54px} .logo.sm .sub{font-size:15px;letter-spacing:3px}
 

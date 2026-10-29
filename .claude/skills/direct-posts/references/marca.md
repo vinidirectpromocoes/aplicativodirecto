@@ -31,12 +31,12 @@ Proporção recomendada: ~70% marinho/azul, ~20% branco, ~10% azul-claro. Datas 
 - **Kaushan Script**: só para o toque humano curto no canto (`.tag`). Um uso por arte.
 
 ## Linguagem visual (aprovada — não alterar)
-- Fundo marinho com brilhos azuis desfocados (`.glow`) e uma faixa diagonal azul (`.stripe`).
-- Logo em cartão branco com canto arredondado no topo esquerdo.
+- Fundo marinho com brilhos azuis desfocados (`.glow`). **Sem** faixa/linha diagonal (retirada a pedido da Direct).
+- Logo em cartão branco com canto arredondado no topo esquerdo; "PROMOÇÕES" entre dois tracinhos azuis, como no logo oficial (`references/inspiracao/ref-logo-oficial.jpg`).
 - Cartão de vidro (`.glass`) com itens brancos (`.item`) e ícone quadrado azul — lista de funções.
 - Pílula azul (`.pill`) com ícone em círculo branco — cidade(s).
 - Botão de WhatsApp (`.wa`) grande, o maior elemento depois do título.
-- Foto real de supermercado, pessoa de uniforme marinho, fundida no fundo à direita (`.photo`).
+- Foto real de supermercado/depósito, pessoa de uniforme marinho, fundida no fundo à direita (`.photo`). Para repositor e aux. de depósito, homem.
 - Ícones de traço (stroke 2, cantos arredondados, estilo Lucide), brancos sobre o azul.
 
 ## Tom de voz
