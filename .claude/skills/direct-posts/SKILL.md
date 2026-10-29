@@ -1,6 +1,6 @@
 ---
 name: direct-posts
-description: Cria posts de Instagram (feed 1080x1350, carrossel e stories 1080x1920) para a Direct Promoções — captação de repositores/diaristas/promotores para supermercados, posts informativos e datas comemorativas — cada um com conceito e layout criados do zero, e entrega PNG pronto, link de WhatsApp com mensagem e legenda. Use sempre que o pedido envolver arte, post, story, carrossel, banner, flyer ou "divulgação" da Direct Promoções, vagas/diárias em supermercado, recrutamento na região de Fortaleza (Aquiraz, Caucaia, Maracanaú, Eusébio etc.) ou uma data comemorativa para as redes da empresa, mesmo que a pessoa não diga "Instagram" nem "skill".
+description: Cria posts de Instagram (feed 1080x1350, carrossel e stories 1080x1920) para a Direct Promoções — captação de repositores/diaristas/promotores para supermercados, posts informativos e datas comemorativas — no layout aprovado da marca variando foto e texto, e entrega PNG pronto, link de WhatsApp com mensagem e legenda. Use sempre que o pedido envolver arte, post, story, carrossel, banner, flyer ou "divulgação" da Direct Promoções, vagas/diárias em supermercado, recrutamento na região de Fortaleza (Aquiraz, Caucaia, Maracanaú, Eusébio etc.) ou uma data comemorativa para as redes da empresa, mesmo que a pessoa não diga "Instagram" nem "skill".
 ---
 
 # Posts Direct Promoções
@@ -11,38 +11,39 @@ A Direct Promoções coloca repositores, auxiliares de depósito, operadores de 
 2. **Informativo**: dicas e orientações para quem faz diárias (gera confiança e seguidores).
 3. **Datas comemorativas**: presença de marca, homenagem a colaboradores e clientes.
 
-## Regra principal: profissional, enxuto e cada post diferente
+## Regra principal: o padrão aprovado é o story de Aquiraz
 
-O que a dona da conta pediu, nas palavras dela: algo **"profissional, de empresa"**, sem **"muita informação"** e sem nada **"embaraçoso"** — e **nenhum post igual ao anterior**. As duas coisas valem juntas:
+A dona da conta aprovou o visual do primeiro story (Aquiraz) e reprovou as tentativas de layouts novos (um "cupom fiscal" e um corporativo de fundo claro foram considerados "nada a ver" e "amador"). Então:
 
-1. **Sóbrio e enxuto.** Aparência de comunicação corporativa de RH (grandes varejistas, LinkedIn). Só o essencial: função, local, no máximo um requisito, WhatsApp, @. Muito espaço em branco, um ponto focal, 2–3 cores. Nada de trocadilhos, objetos fantasiados (cupom fiscal, encarte, senha — já reprovados), padrões carregados ou letra manuscrita de destaque.
-2. **Sempre diferente.** Não reaproveite o layout do post anterior trocando só o texto. Varie a **composição** (onde ficam foto, título e CTA), o **fundo** (claro, marinho, foto em tela cheia) e, se quiser, a família da fonte — escolhendo entre os layouts profissionais de `references/conceitos.md` ou criando outro no mesmo espírito.
-
-Fica igual em todo post: logo do carrinho + "DIRECT / PROMOÇÕES", paleta azul, contatos (WhatsApp 85 99224-5035, @directpromocoes), tom de voz e acabamento.
-
-`assets/exemplos/` mostra o nível de acabamento e traz trechos reutilizáveis (logo, botão de WhatsApp, ícones, máscara de foto). Não é um modelo para copiar e trocar texto.
+- **Use sempre o layout dos templates** em `assets/templates/` (fundo marinho com brilhos azuis, logo em cartão branco, frase manuscrita no canto, título em Anton com degradê, pílula de local, cartão de vidro com as funções, botão grande de WhatsApp). Não invente layout novo, não troque fundo nem fontes.
+- **O que muda a cada post** — para não ficar repetido:
+  1. **Foto**: alterne as fotos de `assets/fotos/` (`foto-repositor.jpg`, `foto-repositora.jpg`); não use a mesma do post anterior. Ajuste `background-position`/`right`/`top` da `.photo` para o rosto ficar inteiro e livre de texto.
+  2. **Copy**: título (`.l1` + `.l2`), kicker, frase manuscrita (`.tag`), rótulo do cartão, requisito e frase acima do WhatsApp — escreva uma combinação diferente da do post anterior (banco de frases em `references/conceitos.md`).
+  3. **Local e funções** conforme o pedido.
+- Consulte `marketing/posts/historico.md` para saber a foto e as frases usadas por último.
 
 ## Antes de começar
 
 1. Leia `references/marca.md` (cores, logo, contatos, tom de voz) e a seção do tipo de post em `references/tipos-de-post.md` (conteúdo obrigatório, legendas, calendário de datas).
-2. Leia o histórico `marketing/posts/historico.md` (no repositório) e olhe os PNGs dos últimos posts. Anote os conceitos, fundos e fontes usados nos **últimos 5 posts** — o novo post não pode repetir o conceito, e deve variar ao menos fundo **ou** tipografia em relação ao último.
+2. Leia o histórico `marketing/posts/historico.md` (no repositório): foto e frases do último post, para escolher outras.
 3. Extraia do pedido: **tipo** (captação / informativo / data), **formato** (story, feed ou carrossel), **cidade/região**, **vagas/setores**, **data** e **foto**. Se algo essencial faltar e não houver padrão razoável, pergunte uma vez, de forma curta. Padrões:
-   - formato não especificado → **story + feed** (podem compartilhar o conceito, adaptado a cada formato); se pediu só um formato, faça só esse e ofereça o outro em uma linha;
+   - formato não especificado → **story + feed** (mesma copy adaptada a cada formato); se pediu só um formato, faça só esse e ofereça o outro em uma linha;
    - informativo → carrossel de 3 a 5 slides no feed;
-   - foto não enviada → ilustração/tipografia, ou `assets/fotos/` (hoje só `foto-repositor.jpg`, já muito usada — prefira outra solução visual). Não dê nome, cargo ou depoimento à pessoa da foto como se fosse funcionário real;
+   - foto não enviada → use uma de `assets/fotos/` diferente da do último post. Se o usuário mandar foto nova, recorte em retrato (~1000×2400, rosto no terço de cima) e salve em `assets/fotos/`. Não dê nome, cargo ou depoimento à pessoa da foto;
    - funções: forma neutra quando couber ("Repositor(a)", "Operador(a) de caixa");
    - localidades: confira o nome certo (ex.: "Metrópole" é bairro de Caucaia — Nova Metrópole/Jurema; escreva "Caucaia e Metrópole – CE");
    - data comemorativa que já passou no ano → avise e prepare para a próxima ocorrência, salvo pedido contrário.
 
 ## Fluxo
 
-1. **Defina o layout** em uma frase antes de codar (ex.: "L2: foto na metade de cima, painel marinho arredondado com título, local e WhatsApp em branco, Montserrat"). Se ajudar, busque referências na web (posts de vagas de grandes varejistas, Behance/Dribbble "recruitment post corporate"). Antes de renderizar, corte tudo que não for essencial.
+1. **Copie o template** de `assets/templates/` para `marketing/posts/AAAA-MM-DD-<slug>/<formato>.html` (ou a pasta que o usuário indicar):
+   | Tipo | Story | Feed |
+   |---|---|---|
+   | Captação | `story-captacao.html` | `feed-captacao.html` |
+   | Informativo | adapte o slide 1 de `feed-informativo.html` | `feed-informativo.html` (carrossel) |
+   | Data comemorativa | `story-data-comemorativa.html` | `feed-data-comemorativa.html` ou `feed-data-comemorativa-clara.html` |
 
-2. **Escreva o HTML do zero** em `marketing/posts/AAAA-MM-DD-<slug>/<formato>.html` (ou na pasta que o usuário indicar):
-   - um elemento `.canvas` por imagem, com o tamanho exato (story 1080×1920, feed 1080×1350); carrossel = vários `.canvas`;
-   - fontes do Google Fonts via `<link>` (Poppins, Montserrat ou Inter); cores da paleta de `references/marca.md`;
-   - logos e ícones: `logo-carrinho.svg`, `logo-carrinho-branco.svg`, `icone-whatsapp.svg`, `icone-instagram.svg` (caminhos relativos resolvem em `assets/`) e os SVGs de `references/icones.md`;
-   - elementos só decorativos (padrões, números gigantes de fundo) com `aria-hidden="true"`.
+2. **Troque foto, copy e local** (ver Regra principal). Mantenha a estrutura e os estilos; mexa só em textos, itens, ícones (`references/icones.md`) e no posicionamento da foto. Se o texto ficar maior (ex.: duas cidades), reduza a fonte daquele elemento no `<style>` do post em vez de mudar o layout.
 
 3. **Renderize**:
    ```bash
@@ -58,15 +59,14 @@ Fica igual em todo post: logo do carrinho + "DIRECT / PROMOÇÕES", paleta azul,
    ```
    Saudação neutra ("Olá!") — "bom dia/boa tarde" fica errado em outro horário.
 
-6. **Registre no histórico**: acrescente uma linha em `marketing/posts/historico.md` (data, pasta, tipo/formato, conceito, fundo, fonte de destaque, foto sim/não).
+6. **Registre no histórico**: acrescente uma linha em `marketing/posts/historico.md` (data, pasta, tipo/formato, foto usada, título e frase manuscrita).
 
-7. **Entregue**: PNGs ao usuário, conceito em uma frase, link do WhatsApp, legenda pronta e, para stories, a dica da figurinha **Link** ("CADASTRE-SE AQUI") sobre o botão do WhatsApp. No repositório, faça commit da pasta do post e do histórico.
+7. **Entregue**: PNGs ao usuário, link do WhatsApp, legenda pronta e, para stories, a dica da figurinha **Link** ("CADASTRE-SE AQUI") sobre o botão do WhatsApp. No repositório, faça commit da pasta do post e do histórico.
 
 ## Checklist de qualidade
 
-- **Parece de empresa**: sóbrio, alinhado, com respiro. Se algo parece brincadeira ou enfeite, tire.
-- **Pouca informação**: dá para entender a arte em 3 segundos? Se há mais de ~25 palavras num story de captação, corte.
-- **Diferente do anterior**: ao lado dos últimos posts, a composição é outra à primeira vista — não só outra cor ou texto.
+- **Fiel ao padrão aprovado**: mesmo layout, fontes e cores do story de Aquiraz.
+- **Diferente do anterior**: foto e frases trocadas em relação ao último post do histórico.
 - **Uma mensagem por arte**: o título responde "o que é?" em até ~6 palavras.
 - **Hierarquia clara**: título → apoio (cidade, kicker) → detalhes (vagas) → assinatura (WhatsApp, @, logo).
 - **Legível no celular**: corpo ≥ 20px; título ≥ 60px no feed e ≥ 76px no story; contraste alto.
@@ -81,11 +81,11 @@ Não escreva requisitos de sexo, idade, aparência, estado civil, gravidez, cor 
 
 ## Arquivos da skill
 
-- `references/conceitos.md` — o que a Direct quer/não quer e os layouts profissionais para alternar.
+- `references/conceitos.md` — banco de frases (títulos, frases manuscritas, chamadas) para variar a copy, e o que já foi reprovado.
 - `references/marca.md` — identidade, paleta, fontes permitidas, tom de voz.
 - `references/tipos-de-post.md` — conteúdo obrigatório por tipo, legendas, calendário de datas, referências.
 - `references/icones.md` — ícones SVG prontos.
-- `assets/exemplos/` — posts de exemplo (nível de acabamento; não copiar o layout).
+- `assets/templates/` — layouts aprovados (copiar e trocar foto/copy/local).
 - `assets/brand.css` — tokens de cor e componentes opcionais.
 - `assets/*.svg`, `assets/fotos/` — logo, ícones de WhatsApp/Instagram, fotos.
 - `scripts/render.js` — HTML → PNG. `scripts/whatsapp_link.py` — link `wa.me`.

@@ -26,14 +26,18 @@ Carrinho de compras formado por três barras azuis horizontais (largura decresce
 Proporção recomendada: ~70% marinho/azul, ~20% branco, ~10% azul-claro. Datas comemorativas podem trazer uma cor temática (vermelho no Natal, verde-amarelo no 7 de Setembro) como **acento**, sem substituir o azul da marca.
 
 ## Tipografia
-- Família sem serifa geométrica: **Poppins**, **Montserrat** ou **Inter** (pode alternar entre posts), em 2–3 pesos (500, 700, 800).
-- Título forte (800, 110–140px no story), subtítulo em azul (700), texto em 500.
-- Evite fontes de efeito (manuscritas, condensadas de cartaz, monoespaçadas) — a Direct prefere um visual corporativo.
+- **Anton** (maiúsculas): títulos de impacto. Uma ou duas linhas; a palavra-chave da linha de baixo vai em `.grad-text` (degradê azul-claro).
+- **Montserrat** 600–900: todo o resto. Kicker em 800, maiúsculas, espaçamento largo, com um traço antes.
+- **Kaushan Script**: só para o toque humano curto no canto (`.tag`). Um uso por arte.
 
-## Linguagem visual
-Constantes: logo do carrinho, paleta azul, ícones de traço (estilo Lucide), muito espaço em branco, botão de WhatsApp em destaque (barra marinho ou azul com círculo verde).
-
-Varie a cada post a composição e o fundo seguindo os layouts de `references/conceitos.md`.
+## Linguagem visual (aprovada — não alterar)
+- Fundo marinho com brilhos azuis desfocados (`.glow`) e uma faixa diagonal azul (`.stripe`).
+- Logo em cartão branco com canto arredondado no topo esquerdo.
+- Cartão de vidro (`.glass`) com itens brancos (`.item`) e ícone quadrado azul — lista de funções.
+- Pílula azul (`.pill`) com ícone em círculo branco — cidade(s).
+- Botão de WhatsApp (`.wa`) grande, o maior elemento depois do título.
+- Foto real de supermercado, pessoa de uniforme marinho, fundida no fundo à direita (`.photo`).
+- Ícones de traço (stroke 2, cantos arredondados, estilo Lucide), brancos sobre o azul.
 
 ## Tom de voz
 Direto, acolhedor e respeitoso, falando com "você". Valoriza a experiência do trabalhador de supermercado. Frases curtas, verbos de ação ("Faça seu cadastro", "Chame no WhatsApp", "Junte-se ao nosso time"). Evite promessas que a empresa não garante (salário, vaga certa, "contratação imediata") a menos que o usuário confirme.

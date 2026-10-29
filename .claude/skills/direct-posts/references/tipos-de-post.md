@@ -1,6 +1,6 @@
 # Tipos de post
 
-Este arquivo diz **o que** cada tipo de post precisa conter. **Como** ele vai parecer é decidido a cada post, do zero — ver `conceitos.md`. A ordem dos itens abaixo é de importância, não de posição na arte.
+Este arquivo diz **o que** cada tipo de post contém. O visual é sempre o dos templates aprovados; a variação de texto está em `conceitos.md`.
 
 Sumário: 1. Captação · 2. Informativo · 3. Datas comemorativas · 4. Legendas · 5. Calendário · 6. Referências
 
@@ -8,15 +8,14 @@ Sumário: 1. Captação · 2. Informativo · 3. Datas comemorativas · 4. Legend
 
 **Objetivo:** fazer a pessoa certa chamar no WhatsApp. Tudo na arte serve a isso.
 
-Conteúdo obrigatório (e quase só isso):
-1. Logo.
-2. Selo ou linha curta: "Vagas abertas" / "Estamos contratando".
-3. **Título = a função** ("Repositor", "Operador(a) de caixa"), com a segunda função como subtítulo. Alternativa: título-pergunta curto ("Tem experiência em supermercado?").
-4. Local: ícone de pin + "Caucaia e Metrópole – CE".
-5. No máximo **um** requisito ("Experiência em supermercado").
-6. WhatsApp com o número + @directpromocoes.
-
-Deixe de fora da arte (vai na legenda, se precisar): lista de setores, frases de apoio ("envie seu currículo…"), "junte-se ao time", mais de um requisito.
+Estrutura (a do template `story-captacao.html`):
+1. Logo + frase manuscrita (`.tag`).
+2. Kicker ("VAGAS ABERTAS", "VAGAS PARA DIÁRIAS"…).
+3. Título-pergunta que filtra o público ("TEM EXPERIÊNCIA EM **SUPERMERCADO?**").
+4. Pílula com a(s) cidade(s): "Vagas em **CAUCAIA - CE** / **METRÓPOLE - CE**".
+5. Cartão com 1–3 funções (story) ou 1–4 (feed); setores como chips.
+6. Um requisito positivo.
+7. Frase de ação + botão WhatsApp + @directpromocoes.
 
 Funções comuns e ícone sugerido (estilo Lucide): Repositor → carrinho; Aux. de depósito → caixa/pacote; Operador de caixa → caixa registradora/cartão; Balconista → loja; Atendimento → pessoas; Açougue/Frios → faca/queijo; Padaria/Gastronomia → chapéu de chef; Promotor(a) de vendas → etiqueta/megafone.
 
@@ -39,10 +38,10 @@ Para story informativo: use o slide-capa adaptado ao formato `.story` e mande pa
 
 **Objetivo:** homenagem e presença de marca, não venda. Nada de telefone grande; logo e @ discretos na assinatura.
 
-Estrutura: símbolo da data ou foto → data → nome da data em destaque → mensagem de 1–2 frases ligando a data ao trabalho no supermercado/aos parceiros → assinatura (logo + @).
+Estrutura: símbolo da data num círculo → pílula com a data → "Feliz" em script → nome da data em Anton → mensagem de 1–2 frases ligando a data ao trabalho no supermercado/aos parceiros → assinatura (logo + @).
 
-- Fundo escuro (exemplo: `assets/exemplos/feed-data-comemorativa.html`): datas institucionais e sóbrias (Trabalhador, Consciência Negra, Independência, Data Magna do Ceará).
-- Fundo claro (exemplos: `story-data-comemorativa.html`, `feed-data-comemorativa-clara.html`): datas afetivas (Mães, Pais, Mulher, Cliente, Crianças, Natal).
+- Fundo escuro (`assets/templates/feed-data-comemorativa.html`): datas institucionais e sóbrias (Trabalhador, Consciência Negra, Independência, Data Magna do Ceará).
+- Fundo claro (`story-data-comemorativa.html`, `feed-data-comemorativa-clara.html`): datas afetivas (Mães, Pais, Mulher, Cliente, Crianças, Natal).
 - Pode-se usar uma cor temática como acento (`--hl`), mantendo o azul da marca dominante.
 - Datas de luto ou temas sensíveis: sem "Feliz", sem script, mensagem respeitosa.
 

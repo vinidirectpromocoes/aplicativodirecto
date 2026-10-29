@@ -1,9 +1,10 @@
 # Histórico de posts
 
-Consulte antes de criar um post novo: não repita o **layout** do último post e varie a composição em relação aos últimos 5. Estilo sempre profissional e enxuto (ver `.claude/skills/direct-posts/references/conceitos.md`).
+Layout sempre o aprovado (templates da skill `direct-posts`). Antes de criar, veja a foto e as frases do último post e escolha outras (`.claude/skills/direct-posts/references/conceitos.md`).
 
-| Data | Pasta | Tipo / formato | Layout | Fundo | Fonte | Foto | Avaliação |
+| Data | Pasta | Tipo / formato | Local | Foto | Título | Frase manuscrita | Avaliação |
 |---|---|---|---|---|---|---|---|
-| 2026-10-29 | `marketing/stories/` (Aquiraz) | Captação / story | Lista de vagas em cartão + foto fundida à direita (≈L3) | Marinho escuro | Anton + Montserrat | Sim | Aprovado |
-| 2026-10-29 | (removido) cupom fiscal Caucaia | Captação / story | Conceito lúdico "cupom fiscal" | Azul vivo com padrão | Archivo Black + Space Mono | Não | **Reprovado**: "nada a ver, muita informação, embaraçoso" |
-| 2026-10-29 | `marketing/posts/2026-10-29-caucaia-metropole/` | Captação / story | L1 – card de foto | Claro | Poppins | Sim | — |
+| 2026-10-29 | `marketing/stories/` | Captação / story | Aquiraz – CE | foto-repositor.jpg | Tem experiência em / Supermercado? | Junte-se ao nosso time! | **Aprovado (padrão)** |
+| 2026-10-29 | (removido) | Captação / story | Caucaia e Metrópole | — | Cupom fiscal | — | Reprovado: "nada a ver, muita informação" |
+| 2026-10-29 | (removido) | Captação / story | Caucaia e Metrópole | foto-repositor.jpg | Layout corporativo claro | — | Reprovado: "amador, estranho" |
+| 2026-10-29 | `marketing/posts/2026-10-29-caucaia-metropole/` | Captação / story | Caucaia e Metrópole – CE | foto-repositora.jpg | Já trabalhou em / Supermercado? | Sua chance chegou agora! | — |
