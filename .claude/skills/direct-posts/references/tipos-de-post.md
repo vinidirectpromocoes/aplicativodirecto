@@ -1,5 +1,7 @@
 # Tipos de post
 
+Este arquivo diz **o que** cada tipo de post precisa conter. **Como** ele vai parecer é decidido a cada post, do zero — ver `conceitos.md`. A ordem dos itens abaixo é de importância, não de posição na arte.
+
 Sumário: 1. Captação · 2. Informativo · 3. Datas comemorativas · 4. Legendas · 5. Calendário · 6. Referências
 
 ## 1. Captação (vagas e cadastro)
@@ -39,8 +41,8 @@ Para story informativo: use o slide-capa adaptado ao formato `.story` e mande pa
 
 Estrutura: símbolo da data num círculo (ícone de traço) → pílula com a data → "Feliz" em script → nome da data em Anton → mensagem de 1–2 frases ligando a data ao trabalho no supermercado/aos parceiros → assinatura (logo + @).
 
-- Fundo escuro (`feed-data-comemorativa.html`): datas institucionais e sóbrias (Trabalhador, Consciência Negra, Independência, Data Magna do Ceará).
-- Fundo claro (`story-data-comemorativa.html`, `feed-data-comemorativa-clara.html`): datas afetivas (Mães, Pais, Mulher, Cliente, Crianças, Natal).
+- Fundo escuro (exemplo: `assets/exemplos/feed-data-comemorativa.html`): datas institucionais e sóbrias (Trabalhador, Consciência Negra, Independência, Data Magna do Ceará).
+- Fundo claro (exemplos: `story-data-comemorativa.html`, `feed-data-comemorativa-clara.html`): datas afetivas (Mães, Pais, Mulher, Cliente, Crianças, Natal).
 - Pode-se usar uma cor temática como acento (`--hl`), mantendo o azul da marca dominante.
 - Datas de luto ou temas sensíveis: sem "Feliz", sem script, mensagem respeitosa.
 
@@ -84,3 +86,5 @@ Período de pico de captação no varejo: outubro a dezembro (Black Friday e fim
 - Boas práticas de recrutamento no Instagram (CTA claro, cultura da equipe, levar para o canal de cadastro): [Haley Marketing](https://www.haleymarketing.com/2021/03/15/instagram-best-practices-for-staffing-recruiting-companies/), [Teamdash](https://www.teamdash.com/blog/how-to-recruit-on-instagram/), [Picmaker – we are hiring](https://www.picmaker.com/blog/we-are-hiring-poster/).
 - Calendário de datas: [Publer – datas comemorativas 2026](https://publer.com/blog/pt/anota-na-agenda-a-lista-definitiva-de-datas-comemorativas-nas-redes-sociais-em-2026/).
 - Linguagem visual de partida: as duas artes de referência enviadas pela Direct (marinho/azul, logo do carrinho, cartões de função, botão de WhatsApp).
+- Ideias de pôster de vaga (títulos que geram curiosidade, cores vibrantes, ilustrações ligadas à função): [MyCreativeShop – now hiring poster ideas](https://mycreativeshop.com/learn/10-now-hiring-poster-ideas-to-find-your-dream-team), [Joveo – recruiting poster guide](https://www.joveo.com/recruiting-poster-ultimate-guide/).
+- Alerta de golpes com falsas vagas no Instagram (por isso o selo de canal oficial): [Canaltech](https://canaltech.com.br/seguranca/golpe-da-vaga-de-emprego-criminosos-agora-usam-instagram-para-abordar-vitimas-231459/).

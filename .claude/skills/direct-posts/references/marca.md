@@ -25,18 +25,16 @@ Carrinho de compras formado por três barras azuis horizontais (largura decresce
 
 Proporção recomendada: ~70% marinho/azul, ~20% branco, ~10% azul-claro. Datas comemorativas podem trazer uma cor temática (vermelho no Natal, verde-amarelo no 7 de Setembro) como **acento**, sem substituir o azul da marca.
 
-## Tipografia
-- **Anton** (maiúsculas): títulos de impacto. Uma ou duas linhas; a palavra-chave da linha de baixo vai em `.grad-text` (degradê azul-claro).
-- **Montserrat** 600–900: todo o resto. Kicker em 800, maiúsculas, espaçamento largo, com um traço antes.
-- **Kaushan Script**: só para um toque humano curto ("Junte-se ao nosso time!", "Feliz"). No máximo um uso por arte.
+## Tipografia (varie a fonte de destaque entre posts)
+- **Destaque** (títulos): alterne entre Anton, Archivo Black, Bebas Neue, Montserrat Black (900) e Poppins ExtraBold (800). Consulte o histórico para não repetir a do último post.
+- **Texto**: Montserrat, Archivo ou Poppins (500–800). Um conceito pode pedir algo próprio (ex.: Space Mono no cupom fiscal).
+- **Script** (Caveat, Kaushan Script): só um toque humano curto ("Feliz", "Chama a gente!"). No máximo um uso por arte.
+- Todas do Google Fonts, carregadas no `<head>` do post.
 
-## Linguagem visual
-- Fundo marinho com brilhos azuis desfocados (`.glow`) e uma faixa diagonal azul (`.stripe`).
-- Cartão de vidro (`.glass`) com itens brancos (`.item`) e ícone quadrado azul — lista de vagas, passos, benefícios.
-- Pílula azul (`.pill`) com ícone em círculo branco — cidade, data, destaque único.
-- Botão de WhatsApp (`.wa`) grande, sempre o maior elemento depois do título nos posts de captação.
-- Fotos reais de supermercado, pessoa de uniforme marinho, fundidas no fundo (`.photo`).
-- Ícones de traço (stroke 2, cantos arredondados, estilo Lucide), brancos sobre o azul.
+## Linguagem visual (constantes x variáveis)
+Constantes: logo do carrinho, paleta azul com acento amarelo, ícones de traço (estilo Lucide, stroke 2), acabamento limpo, botão de WhatsApp sempre com destaque.
+
+Variáveis a cada post: conceito, composição, fundo, fonte de destaque, uso de foto/ilustração, forma do CTA — ver `references/conceitos.md`. Os elementos dos exemplos (`.glow`, `.glass`, `.pill`, foto fundida à direita) são **um** estilo possível, já usado; não o transforme em padrão.
 
 ## Tom de voz
 Direto, acolhedor e respeitoso, falando com "você". Valoriza a experiência do trabalhador de supermercado. Frases curtas, verbos de ação ("Faça seu cadastro", "Chame no WhatsApp", "Junte-se ao nosso time"). Evite promessas que a empresa não garante (salário, vaga certa, "contratação imediata") a menos que o usuário confirme.
