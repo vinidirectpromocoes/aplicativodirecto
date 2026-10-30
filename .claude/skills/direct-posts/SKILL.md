@@ -42,10 +42,11 @@ A dona da conta aprovou o visual do primeiro story (Aquiraz) e reprovou as tenta
    |---|---|
    | Vagas (story) | `story-captacao.html` |
    | Vagas (feed) | `feed-captacao.html` |
-   | Ação em loja / case com marca (foto real) | 1º canvas de `feed-acao-em-loja-e-capa-reels.html` |
+   | Ação em loja / case com marca (foto real) — **só @directeventos_** | 1º canvas de `feed-acao-em-loja-e-capa-reels.html` |
    | Capa de Reels | 2º canvas de `feed-acao-em-loja-e-capa-reels.html` (título dentro do centro 1080×1440) |
    | Data comemorativa (estilo único, marinho) | `feed-datas-estilo-unico.html` — copie um canvas, troque ícone, data, título e mensagem; datas sóbrias sem "Feliz"; datas comerciais (Black Friday) com CTA B2B |
-   | Institucional (quem somos, marcas, trabalhe conosco) | `feed-institucional-fixados.html` |
+   | Institucional diárias (como funciona, setores, vagas abertas) | `feed-fixados-diarias.html` |
+   | Institucional eventos (quem somos promotores, marcas que confiam) — **só @directeventos_** | `feed-institucional-fixados.html` |
    | Informativo (carrossel) | `feed-informativo.html` |
    | Capas de destaque | `capas-destaques.html` |
 
@@ -85,10 +86,14 @@ A dona da conta aprovou o visual do primeiro story (Aquiraz) e reprovou as tenta
 
 ## Regras de marca aprovadas no plano de 29/10/2026
 
-- Nome nas artes: **Direct Promoções** — nunca "& Eventos".
+- **Dois perfis:** @directpromocoes = **diárias em supermercados** (diaristas + supermercados que precisam de diaristas; nada de degustação/eventos aqui). @directeventos_ = degustação, ativação, eventos (logo "& EVENTOS"; plano próprio). Pergunte para qual perfil é o post se não estiver claro.
+- Nome nas artes do @directpromocoes: **Direct Promoções** — sem "& Eventos".
+- **Setores oficiais** (sistema Direct, `SETORES_INICIAIS`): Operador(a) de caixa · Repositor(a) de mercearia · Repositor(a) de FLV · Repositor(a) de frios · Balconista de padaria · Balconista de frios · Balconista de açougue · Auxiliar de depósito · ASG · Açougueiro(a). Use só esses nomes nas vagas.
+- **Bio do Instagram: máximo 150 caracteres** (conte emojis e quebras de linha). Nome do perfil: máximo 30.
+- Link da bio publicado: https://directdiarias.vercel.app (projeto Vercel `directdiarias`).
 - Logo: carrinho + DIRECT + "— PROMOÇÕES —"; versão branca ou cartão branco em fundo escuro.
-- Público duplo: clientes (supermercados/indústrias) e diaristas. Posts B2B usam "Fale com a Direct"; posts de vaga usam "Cadastro pelo WhatsApp".
-- Divisão de conteúdo: 40% ações em loja/cases · 25% vagas e dicas · 20% equipe/bastidores · 15% datas.
+- Posts para supermercados usam "Fale com a Direct"; posts de vaga usam "Cadastro pelo WhatsApp".
+- Divisão de conteúdo do @directpromocoes: 40% vagas · 25% dicas para diaristas · 20% equipe/depoimentos · 15% datas.
 - Plano completo, bio, links e calendário: `marketing/plano-2026-11/README.md`.
 
 ## Linha que não se cruza: anúncio de vaga sem discriminação

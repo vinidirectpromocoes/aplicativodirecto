@@ -1,131 +1,110 @@
-# Plano de melhoria do Instagram — Direct Promoções
+# Plano de melhoria — @directpromocoes (diárias)
 
-Aprovado em 29/10/2026. Nome nas artes: **Direct Promoções** (sem "& Eventos").
+Aprovado em 29–30/10/2026. Nome nas artes: **Direct Promoções**.
 
-## 1. Bio (copiar e colar em Editar perfil → Bio)
+Os perfis têm funções separadas:
+- **@directpromocoes** — diárias em supermercados (este plano). Públicos: diaristas (principal) e supermercados que precisam de diaristas.
+- **@directeventos_** — degustação, ativação, eventos. Plano próprio na próxima etapa (material já separado em `para-directeventos/`).
 
-**Opção A — equilibrada (recomendada)**
+## 1. Perfil
+
+**Bio (máx. 150 caracteres — esta tem 138):**
 ```
-🛒 Promotores, repositores e degustação para supermercados
-🏆 +8 anos · +20 empresas atendidas
-🤝 Sua marca bem feita no ponto de venda
-💼 Vagas para diaristas em Fortaleza e região
-📲 Fale conosco ↓
+💼 Diárias em supermercados | Fortaleza e região
+🛒 Repositor • Caixa • Balconista • Depósito
+🎪 Eventos: @directeventos_
+📲 Cadastre-se ↓
 ```
+Alternativa (121): `💼 Diárias em supermercados – Fortaleza/CE` / `🛒 Repositor • Caixa • Balconista` / `🏆 +8 anos no mercado` / `📲 Faça seu cadastro ↓`
 
-**Opção B — mais curta**
-```
-🛒 Soluções para supermercados e indústrias
-👥 Promotores • Diaristas • Degustação • Eventos
-🏆 +8 anos · +20 empresas atendidas
-📍 Fortaleza e Região Metropolitana – CE
-📲 Contrate ou trabalhe com a gente ↓
-```
+**Nome (máx. 30):** `Direct | Diárias Supermercado`
+**Categoria:** Agência de empregos (exibir categoria: ativado).
 
-Nome no perfil (campo "Nome", entra na busca): `Direct Promoções | Promotores e Diaristas`
+## 2. Link na bio
 
-## 2. Links na bio
+Página publicada: **https://directdiarias.vercel.app**
+(Editar perfil → Links → Adicionar link externo → colar o endereço → título "Cadastro e vagas".)
 
-O Instagram aceita até 5 links. Em **Editar perfil → Links → Adicionar link externo**, crie estes dois, nesta ordem:
+A página tem:
+- **Quero fazer diárias** → WhatsApp com "Olá! Quero me cadastrar para fazer diárias em supermercados com a Direct Promoções."
+- **Sou supermercado: preciso de diaristas** → WhatsApp com "Olá! Sou de um supermercado e preciso de diaristas. Gostaria de conhecer o serviço da Direct Promoções."
+- Os 10 setores do sistema Direct, link para @directeventos_ e @directpromocoes.
 
-| Título do link | URL |
-|---|---|
-| Quero contratar a Direct | `https://wa.me/5585992245035?text=Ol%C3%A1%21%20Represento%20um%20supermercado/ind%C3%BAstria%20e%20gostaria%20de%20conhecer%20os%20servi%C3%A7os%20da%20Direct%20Promo%C3%A7%C3%B5es%20%28promotores%2C%20diaristas%20e%20degusta%C3%A7%C3%A3o%29.` |
-| Quero fazer diárias | `https://wa.me/5585992245035?text=Ol%C3%A1%21%20Quero%20me%20cadastrar%20para%20fazer%20di%C3%A1rias%20em%20supermercados%20com%20a%20Direct%20Promo%C3%A7%C3%B5es.` |
+Código: `link-na-bio/index.html` · projeto Vercel `directdiarias` (time sistemadirectpromocoes). Para atualizar, publicar de novo o mesmo projeto.
 
-Opcional: a página `link-na-bio/index.html` (prévia em `link-na-bio/previa-celular.png`) reúne os dois botões numa página com a identidade da marca. Para usá-la, ela precisa ser publicada num endereço (ex.: Vercel, gratuito); aí esse endereço vira o único link da bio.
+## 3. Botões de contato
 
-## 3. Botões de contato no perfil
-
-Precisa ser **conta comercial** (Configurações → Tipo de conta e ferramentas → Mudar para conta profissional → Empresa).
-1. **Editar perfil → Opções de contato** (ou "Informações de contato públicas").
-2. **Telefone comercial**: (85) 99224-5035 — marque "WhatsApp" se aparecer a opção.
-3. **E-mail comercial** da empresa.
-4. **Endereço comercial**: opcional (cidade: Fortaleza – CE).
-5. **Exibir informações de contato**: ativado. Aparecem os botões "Ligar", "WhatsApp" e "E-mail".
-6. Em **Categoria**, escolha algo como "Agência de marketing" ou "Serviço comercial" e ative "Exibir categoria".
+Conta profissional (Empresa) → **Editar perfil → Opções de contato** → telefone (85) 99224-5035 com WhatsApp, e-mail comercial → **Exibir informações de contato: ativado**.
 
 ## 4. Destaques (pasta `destaques/`)
 
-Ordem (da esquerda para a direita) e capa:
-
 | # | Nome | Capa | O que colocar |
 |---|---|---|---|
-| 1 | Quem somos | `1-quem-somos.png` | Post fixado "Quem somos" + vídeos curtos da equipe |
-| 2 | Vagas | `2-vagas.png` | Todos os stories de vagas (Aquiraz, Caucaia…) |
-| 3 | Promotores | `3-promotores.png` | Promotores em ação nas lojas |
-| 4 | Degustações | `4-degustacoes.png` | Ações de degustação |
-| 5 | Eventos | `5-eventos.png` | Junta "eventos" + "eventos 1" (FCO, reinaugurações…) |
-| 6 | Clientes | `6-clientes.png` | Post "Marcas que confiam" + ações por marca |
-| 7 | Contato | `7-contato.png` | Story com WhatsApp e link de cadastro |
+| 1 | Vagas | `1-vagas.png` | Todos os stories de vagas (Aquiraz, Caucaia e Metrópole…) |
+| 2 | Como funciona | `2-como-funciona.png` | Passo a passo do cadastro + link da bio |
+| 3 | Setores | `3-setores.png` | Post "Setores que atendemos" e um story por setor |
+| 4 | Dicas | `4-dicas.png` | Dicas para diaristas (primeira diária, uniforme, pontualidade) |
+| 5 | Equipe | `5-equipe.png` | Diaristas em ação, depoimentos (com autorização) |
+| 6 | Supermercados | `6-supermercados.png` | Para gerentes: como solicitar diaristas |
+| 7 | Contato | `7-contato.png` | WhatsApp e link de cadastro |
 
-Para trocar a capa: segurar o destaque → **Editar destaque → Editar capa** → ícone de galeria → escolher o PNG.
+Os destaques atuais de degustação/eventos devem ser removidos daqui (o conteúdo vive no @directeventos_).
 
-## 5. Posts fixados (pasta `fixados/`)
+## 5. Arquivar posts de degustação/eventos
 
-Publicar nesta ordem e fixar (⋯ → Fixar no perfil) — o último fixado aparece primeiro:
-1. `fixado-1-quem-somos.png`
-2. `fixado-2-marcas.png` — hoje com os **nomes** das marcas; envie os logos oficiais (PNG) para trocar.
-3. `fixado-3-trabalhe-conosco.png`
+No @directpromocoes, abrir cada post de degustação/ativação (Uniforça, Mimo, Hershey's, Emborg, Adimax, M. Dias Branco, Popcorn, FCO, Frangolândia, "Farofa", "5 curiosidades sobre os cursos" etc.) → **⋯ → Arquivar**. Arquivar esconde do perfil sem apagar; dá para desarquivar depois. Datas comemorativas e o logo podem ficar.
 
-## 6. Identidade visual unificada
+## 6. Posts fixados (pasta `fixados/`)
 
-Quatro famílias de arte, todas na skill `direct-posts`:
+Publicar nesta ordem e fixar (⋯ → Fixar no perfil):
+1. `fixado-1-como-funciona.png` — passo a passo do cadastro
+2. `fixado-2-setores.png` — os 10 setores
+3. `fixado-3-vagas-abertas.png` — vagas abertas / cadastro
 
-| Família | Modelo | Quando usar |
-|---|---|---|
-| Vagas | story/feed de captação (Aquiraz/Caucaia) | Toda divulgação de vaga |
-| Ação em loja | `modelos/modelo-acao-em-loja.png` | Fotos reais de promotores nas marcas — substitui a faixa "DIRECT PROMOÇÕES & MARCA" |
-| Datas | `datas/*.png` | Todas as datas, mesmo estilo marinho (sem dourado/serifa) |
-| Institucional / Reels | fixados + `modelos/modelo-capa-reels.png` | Quem somos, números, capas de Reels |
+## 7. Setores (fonte: sistema Direct — `SETORES_INICIAIS` / `tarifas_setores`)
 
-Regras do logo: sempre carrinho + **DIRECT** + **— PROMOÇÕES —**; em fundo escuro use a versão branca ou o cartão branco; nunca distorcer, nunca "& Eventos".
+Operador de caixa · Repositor de mercearia · Repositor de FLV · Repositor de frios · Balconista de padaria · Balconista de frios · Balconista de açougue · Auxiliar de depósito · ASG · Açougueiro.
+Nas artes, usar a forma neutra: Operador(a), Repositor(a), Açougueiro(a).
 
-## 7. Calendário novembro–dezembro 2026 (3 posts/semana + stories diários)
+## 8. Conteúdo e calendário (3 posts/semana + stories diários)
 
-Seg / Qua / Sex. "Ação em loja" = foto real da semana no modelo novo.
+Divisão: **40% vagas** · 25% dicas para diaristas · 20% equipe/depoimentos · 15% datas.
 
 | Semana | Segunda | Quarta | Sexta |
 |---|---|---|---|
-| 02–06/11 | Quem somos (fixar) | Marcas que confiam (fixar) | Trabalhe conosco (fixar) |
-| 09–13/11 | Ação em loja | Vagas Caucaia e Metrópole (story + feed) | Reels: bastidores |
-| 16–20/11 | Ação em loja | Carrossel: dicas para a primeira diária | **20/11 Consciência Negra** |
-| 23–27/11 | Story B2B: "Black Friday chegando — reforce sua equipe" | Ação em loja | **27/11 Black Friday** (B2B) |
-| 30/11–04/12 | Ação em loja | Vagas para o fim de ano | Reels: um dia de repositor |
-| 07–11/12 | Ação em loja | Carrossel: como funciona o cadastro | Vagas (outra região) |
-| 14–18/12 | Ação em loja | Depoimento de cliente (se autorizado) | Reels: equipe |
-| 21–25/12 | Ação em loja | Carrossel: retrospectiva 2026 em números | **25/12 Natal** |
-| 28/12–01/01 | Bastidores do ano | — | **01/01 Ano-Novo 2027** |
-
-Divisão de conteúdo: 40% ações em loja/cases · 25% vagas e dicas · 20% equipe/bastidores · 15% datas.
+| 02–06/11 | Como funciona (fixar) | Setores (fixar) | Vagas abertas (fixar) |
+| 09–13/11 | Vagas Caucaia e Metrópole (story + feed) | Carrossel: dicas para a primeira diária | Reels: um dia de repositor |
+| 16–20/11 | Vagas (outra região) | Setor da semana: operador(a) de caixa | **20/11 Consciência Negra** |
+| 23–27/11 | Story para supermercados: "Black Friday — reforce sua equipe" | Vagas de fim de ano | **27/11 Black Friday** |
+| 30/11–04/12 | Vagas | Carrossel: documentos para o cadastro | Reels: equipe |
+| 07–11/12 | Vagas | Setor da semana: repositor(a) de FLV | Depoimento de diarista (com autorização) |
+| 14–18/12 | Vagas de fim de ano | Carrossel: pontualidade e uniforme | Reels: bastidores |
+| 21–25/12 | Vagas | Carrossel: retrospectiva 2026 | **25/12 Natal** |
+| 28/12–01/01 | Vagas de janeiro | — | **01/01 Ano-Novo 2027** |
 
 Legendas das datas:
 - **Consciência Negra:** "Respeito, igualdade e oportunidade para todos. Diversidade que fortalece o nosso time. #ConsciênciaNegra #DirectPromoções"
-- **Black Friday:** "O maior movimento do ano pede reforço no ponto de venda. Promotores, repositores e degustação para a sua loja. 📲 85 99224-5035 #BlackFriday #Supermercados #DirectPromoções"
-- **Natal:** "Obrigado a cada colaborador, cliente e parceiro que fez parte da nossa história este ano. Boas festas! 🎄 #FelizNatal #DirectPromoções"
-- **Ano-Novo:** "Que 2027 traga ainda mais conquistas, parcerias e oportunidades. Seguimos juntos! ✨ #FelizAnoNovo #DirectPromoções"
+- **Black Friday:** "Supermercado, precisa reforçar a equipe no maior movimento do ano? Temos diaristas: repositores, operadores de caixa e mais. 📲 85 99224-5035 #BlackFriday #Supermercados #DirectPromoções"
+- **Natal:** "Obrigado a cada diarista, cliente e parceiro que fez parte da nossa história este ano. Boas festas! 🎄 #FelizNatal #DirectPromoções"
+- **Ano-Novo:** "Que 2027 traga ainda mais conquistas e oportunidades. Seguimos juntos! ✨ #FelizAnoNovo #DirectPromoções"
 
-## 8. Relatório mensal (preencher todo dia 1º)
-
-Dados em **Painel profissional → Insights** (últimos 30 dias).
+## 9. Relatório mensal (todo dia 1º — Painel profissional → Insights)
 
 | Indicador | Mês anterior | Este mês | Observação |
 |---|---|---|---|
 | Seguidores |  |  |  |
 | Contas alcançadas |  |  |  |
 | Visitas ao perfil |  |  |  |
-| Toques nos links da bio |  |  |  |
-| Mensagens no WhatsApp — clientes |  |  |  |
+| Toques no link da bio |  |  |  |
 | Mensagens no WhatsApp — cadastros de diaristas |  |  |  |
+| Mensagens no WhatsApp — supermercados |  |  |  |
 | Post com mais visualizações (tipo) |  |  |  |
-| Post com menos visualizações (tipo) |  |  |  |
-
-Decisão do mês: aumentar o tipo de post que mais trouxe mensagens; reduzir o que menos trouxe.
 
 ## Arquivos
 
-- `destaques/` — 7 capas de destaque (1080×1920)
+- `destaques/` — 7 capas (1080×1920)
 - `fixados/` — 3 posts fixados (1080×1350)
-- `datas/` — Consciência Negra, Black Friday, Natal, Ano-Novo (1080×1350)
-- `modelos/` — modelo de ação em loja e de capa de Reels
-- `link-na-bio/` — página opcional de links
+- `datas/` — Consciência Negra, Black Friday, Natal, Ano-Novo
+- `modelos/` — capa de Reels
+- `link-na-bio/` — página publicada em directdiarias.vercel.app
+- `para-directeventos/` — material reservado para o @directeventos_ (Quem somos promotores, Marcas que confiam, Ação em loja)
