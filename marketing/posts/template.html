@@ -23,28 +23,32 @@
   .post { position: relative; width: var(--w); height: var(--h); overflow: hidden; }
 
   /* Fundo: a mesma foto desfocada preenche áreas vazias quando a foto é reposicionada */
-  .fundo { position: absolute; inset: -60px; background-size: cover; background-position: center; filter: blur(40px) brightness(.55); }
+  .fundo { position: absolute; inset: -60px; background-size: cover; background-position: center; filter: blur(40px) brightness(.3); }
   .foto { position: absolute; left: 50%; transform: translateX(-50%); display: block; }
 
   /* Escurecimento para leitura do texto (topo forte, base leve) */
   .sombra { position: absolute; inset: 0; pointer-events: none;
     background:
-      linear-gradient(180deg, rgba(0,0,0,.78) 0%, rgba(0,0,0,.55) 22%, rgba(0,0,0,.18) 40%, rgba(0,0,0,0) 52%),
-      linear-gradient(0deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,0) 22%);
+      linear-gradient(180deg, #000 0%, rgba(0,0,0,.88) 12%, rgba(0,0,0,.55) 26%, rgba(0,0,0,.15) 38%, rgba(0,0,0,0) 46%),
+      linear-gradient(0deg, #000 0%, rgba(0,0,0,.75) 9%, rgba(0,0,0,.3) 18%, rgba(0,0,0,0) 26%);
   }
 
-  .topo { position: absolute; top: 34px; left: 0; right: 0; text-align: center; }
+  .topo { position: absolute; top: 20px; left: 0; right: 0; text-align: center; }
   .logo { font-family: "Montserrat", sans-serif; font-weight: 200; line-height: .9; color: #f2f2f2; }
-  .logo .l1 { font-size: 66px; letter-spacing: .14em; padding-left: .14em; }
-  .logo .l2 { font-size: 27px; letter-spacing: .2em; padding-left: .2em; font-weight: 300; margin-top: 2px; }
+  .logo .l1 { font-size: 50px; letter-spacing: .14em; padding-left: .14em; }
+  .logo .l2 { font-size: 20px; letter-spacing: .2em; padding-left: .2em; font-weight: 300; margin-top: 2px; }
 
-  .kicker { margin-top: 46px; font-size: 21px; font-weight: 500; letter-spacing: .38em; padding-left: .38em; color: var(--texto-suave); }
+  .kicker { margin-top: 74px; font-size: 21px; font-weight: 500; letter-spacing: .38em; padding-left: .38em; color: var(--texto-suave); }
   .titulo { margin-top: 18px; font-weight: 800; line-height: .94; letter-spacing: -.01em; text-transform: uppercase; }
   .titulo .t1 { display: block; font-size: var(--t1, 96px); color: #fff; text-shadow: 0 4px 24px rgba(0,0,0,.35); }
   .titulo .t2 { display: block; font-size: var(--t2, 96px);
     background: linear-gradient(180deg, #ffffff 0%, #d9d9d9 40%, #9a9a9a 75%, #cfcfcf 100%);
     -webkit-background-clip: text; background-clip: text; color: transparent;
     filter: drop-shadow(0 4px 18px rgba(0,0,0,.35)); }
+  /* Título em uma linha: modelo + capacidade lado a lado (tamanho ajustado à largura) */
+  .titulo.linha { white-space: nowrap; }
+  .titulo.linha .t1, .titulo.linha .t2 { display: inline; }
+  .titulo.linha .t2 { margin-left: .22em; }
   .sub { margin-top: 22px; font-size: 27px; font-weight: 500; color: #f4f4f4; text-shadow: 0 2px 12px rgba(0,0,0,.5); }
 
   .pills { margin-top: 26px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; padding: 0 60px; }
@@ -58,11 +62,14 @@
     font-size: 28px; font-weight: 700; letter-spacing: .02em; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
   /* Stories 1080x1920: texto e botão fora das áreas cobertas pela interface do Instagram */
   .story { --h: 1920px; }
-  .story .topo { top: 230px; }
+  .story .topo { top: 170px; }
   .story .cta { bottom: 250px; }
   .story .sombra { background:
-      linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.6) 28%, rgba(0,0,0,.2) 42%, rgba(0,0,0,0) 52%),
-      linear-gradient(0deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 30%); }
+      linear-gradient(180deg, #000 0%, rgba(0,0,0,.88) 14%, rgba(0,0,0,.55) 28%, rgba(0,0,0,.15) 38%, rgba(0,0,0,0) 45%),
+      linear-gradient(0deg, #000 0%, rgba(0,0,0,.8) 12%, rgba(0,0,0,.35) 22%, rgba(0,0,0,0) 32%); }
+  .story .titulo .t1, .story .titulo .t2 { font-size: 110px; }
+  .story .logo .l1 { font-size: 58px; }
+  .story .logo .l2 { font-size: 23px; }
   .cta svg { width: 40px; height: 40px; flex: none; }
 
   /* Layout "v2": fundo preto, degradê suave em cima e embaixo, título no topo e
@@ -126,6 +133,7 @@
   const p = window.POST;
   if (p.formato === 'story') document.documentElement.classList.add('story');
   if (p.estilo) document.documentElement.classList.add(p.estilo);
+  if (p.estilo !== 'v2' && p.umaLinha !== false) document.querySelector('.titulo').classList.add('linha');
   const post = document.getElementById('post');
   const fundo = document.getElementById('fundo');
   if (p.fundo) { fundo.style.background = p.fundo; fundo.style.filter = 'none'; }
@@ -138,6 +146,14 @@
   // Foto menor que a arte: funde as bordas de cima/baixo no fundo desfocado
   foto.onload = async () => {
     await document.fonts.ready;
+    // Título em uma linha: reduz a fonte até caber em 940px
+    const tit = document.querySelector('.titulo');
+    if (tit.classList.contains('linha')) {
+      const ts = [document.getElementById('t1'), document.getElementById('t2')];
+      let tam = parseFloat(getComputedStyle(ts[0]).fontSize);
+      const largura = () => ts.reduce((s, t) => s + t.getBoundingClientRect().width, 0);
+      while (largura() > 940 && tam > 40) { tam -= 2; ts.forEach(t => t.style.fontSize = tam + 'px'); }
+    }
     // Faixa: a foto ocupa a largura toda e exatamente o espaço livre entre o texto
     // de cima e o de baixo (recorte por object-fit, ponto focal em "posicao")
     if (p.centralizar) {

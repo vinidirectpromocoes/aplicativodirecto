@@ -14,7 +14,7 @@
       "Brindes"
     ],
     "story": {
-      "topo": 70,
+      "topo": -10,
       "zoom": 1
     }
   },
@@ -33,7 +33,7 @@
       "Brindes"
     ],
     "story": {
-      "topo": 260,
+      "topo": 170,
       "zoom": 1
     }
   },
@@ -121,5 +121,25 @@
     ],
     "centralizar": true,
     "posicao": "center 40%"
+  },
+  {
+    "id": "perfumes-originais",
+    "foto": "fotos/perfumes.jpg",
+    "zoom": 1,
+    "topo": 430,
+    "esfumado": 110,
+    "kicker": "OFERTA ESPECIAL",
+    "titulo1": "Perfumes",
+    "titulo2": "Originais",
+    "subtitulo": "Lacrados e com preço de oferta.",
+    "selos": [
+      "Miniaturas",
+      "Árabes",
+      "Nicho"
+    ],
+    "story": {
+      "topo": 600,
+      "zoom": 1
+    }
   }
 ]
