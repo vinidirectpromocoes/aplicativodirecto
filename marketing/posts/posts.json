@@ -60,7 +60,7 @@
     "id": "perfumes-originais",
     "foto": "fotos/perfumes.jpg",
     "zoom": 1,
-    "topo": -460,
+    "topo": -415,
     "kicker": "OFERTA ESPECIAL",
     "titulo1": "Perfumes",
     "titulo2": "Originais",
@@ -72,7 +72,7 @@
     ],
     "story": {
       "zoom": 1,
-      "topo": -170
+      "topo": -130
     }
   },
   {

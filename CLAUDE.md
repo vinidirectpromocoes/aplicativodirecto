@@ -7,6 +7,12 @@ WhatsApp de vendas: (85) 98433-0011 (DDD 85, Fortaleza/CE). Idioma: português d
 
 Logo oficial e arte de parcelamento aprovada: `marketing/posts/referencia-parcelamento-18x.png`.
 
+## Fontes
+
+- Título: **Fjalla One** (Google Fonts) — equivalente da fonte "Squeeze" do Instagram.
+- Demais textos (chamada, frase, selos, botão, lista): **Quicksand** 600/700 — equivalente da "Deco" do Instagram.
+- Logo VINI IPHONES: Montserrat fina (não muda).
+
 ## Padrão de post do Instagram (feed 1080x1350)
 
 Referência aprovada: `marketing/posts/referencia-perfumes.png`. Todo post novo segue esta estrutura,
@@ -14,7 +20,7 @@ de cima para baixo, centralizada sobre a foto real do produto:
 
 1. Logo "VINI / IPHONES" em fonte fina (Montserrat 200/300), letras espaçadas.
 2. Chamada pequena espaçada: `OFERTA ESPECIAL` (ou outra curta, sempre em caixa alta).
-3. Título em UMA linha, sem quebra, TODO EM BRANCO, Plus Jakarta Sans 800, caixa alta: modelo +
+3. Título em UMA linha, sem quebra, TODO EM BRANCO, Fjalla One (equivalente da fonte Squeeze do Instagram), caixa alta: modelo +
    capacidade ao lado (ex.: IPHONE 17 256GB, IPAD 11 128GB & 256GB). Chamada e frase coladas ao título.
 4. Subtítulo curto em uma linha (ex.: "Lacrado e com 1 ano de garantia Apple.").
 5. Até 3 selos em pílulas escuras translúcidas com borda clara (ex.: LACRADO, GARANTIA APPLE, BRINDES).
