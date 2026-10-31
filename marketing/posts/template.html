@@ -45,9 +45,9 @@
     background: linear-gradient(180deg, #ffffff 0%, #d9d9d9 40%, #9a9a9a 75%, #cfcfcf 100%);
     -webkit-background-clip: text; background-clip: text; color: transparent;
     filter: drop-shadow(0 4px 18px rgba(0,0,0,.35)); }
-  /* Título em uma linha, todo branco; ocupa a mesma altura das 2 linhas antigas para
-     não mexer no resto do layout (fonte reduz sozinha para caber em 940px) */
-  .titulo.linha { height: calc(var(--t1, 96px) * .94 * 2); display: flex; align-items: center;
+  /* Título em uma linha, todo branco, junto da chamada e da frase
+     (fonte reduz sozinha para caber em 940px) */
+  .titulo.linha { display: flex; align-items: center;
     justify-content: center; white-space: nowrap; }
   .titulo.linha .t2 { margin-left: .25em; }
   .titulo.linha .t2 { background: none; color: #fff; filter: none; text-shadow: 0 4px 24px rgba(0,0,0,.35); }

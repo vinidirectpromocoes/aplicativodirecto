@@ -15,7 +15,7 @@ de cima para baixo, centralizada sobre a foto real do produto:
 1. Logo "VINI / IPHONES" em fonte fina (Montserrat 200/300), letras espaçadas.
 2. Chamada pequena espaçada: `OFERTA ESPECIAL` (ou outra curta, sempre em caixa alta).
 3. Título em UMA linha, sem quebra, TODO EM BRANCO, Plus Jakarta Sans 800, caixa alta: modelo +
-   capacidade ao lado (ex.: IPHONE 17 256GB, PERFUMES ORIGINAIS). A fonte reduz sozinha para caber.
+   capacidade ao lado (ex.: IPHONE 17 256GB, IPAD 11 128GB & 256GB). Chamada e frase coladas ao título.
 4. Subtítulo curto em uma linha (ex.: "Lacrado e com 1 ano de garantia Apple.").
 5. Até 3 selos em pílulas escuras translúcidas com borda clara (ex.: LACRADO, GARANTIA APPLE, BRINDES).
 6. Rodapé: pílula branca com ícone do WhatsApp e `GARANTA O SEU: (85) 98433-0011`.
@@ -40,7 +40,7 @@ Stories: mesmo layout do feed, com texto começando abaixo de 230px e o botão d
 250px acima da base, para não ficarem sob a interface do Instagram.
 
 Arte pronta (ex.: perfumes, feita fora do gerador): para trocar só o título, apague o texto antigo
-(fotos/perfumes-arte-sem-titulo.png) e use `node titulo-sobre-arte.js <arte> <saida> "<TÍTULO>" <centroY>`.
+(fotos/perfumes-arte-sem-titulo.png) e use `node titulo-sobre-arte.js <arte> <saida> "<TÍTULO>" <centroY> "<CHAMADA>" "<FRASE>"`.
 
 Fotos de fornecedor/print: recorte antes (tire barra do celular, logos e preços de outras lojas,
 textos sobrepostos) e salve em fotos/. Legendas e copy de anúncio ficam em `legendas.md`.
