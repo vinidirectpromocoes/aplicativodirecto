@@ -1,6 +1,7 @@
 # Vini iPhones — contexto da marca
 
-Loja de produtos Apple lacrados (iPhone, iPad, MacBook) e perfumes originais.
+Loja de produtos Apple lacrados (iPhone, iPad, MacBook, AirPods, acessórios originais),
+relógios Garmin lacrados e perfumes originais. Parcelamento em até 12x no cartão.
 WhatsApp de vendas: (85) 98433-0011 (DDD 85, Fortaleza/CE). Idioma: português do Brasil.
 
 ## Padrão de post do Instagram (feed 1080x1350)
@@ -33,5 +34,8 @@ node render.js --story    # versões stories 1080x1920 (enquadramento no bloco "
 
 Stories: mesmo layout do feed, com texto começando abaixo de 230px e o botão do WhatsApp
 250px acima da base, para não ficarem sob a interface do Instagram.
+
+Fotos de fornecedor/print: recorte antes (tire barra do celular, logos e preços de outras lojas,
+textos sobrepostos) e salve em fotos/. Legendas e copy de anúncio ficam em `legendas.md`.
 
 Sempre confira o PNG gerado: texto não pode cobrir o produto principal.

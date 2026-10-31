@@ -55,5 +55,81 @@
       "topo": 550,
       "zoom": 1
     }
+  },
+  {
+    "id": "parcelamento-12x",
+    "foto": "fotos/iphone-17.jpg",
+    "zoom": 1,
+    "topo": -90,
+    "kicker": "FACILITAMOS PRA VOCÊ",
+    "titulo1": "Parcele em",
+    "titulo2": "até 12x",
+    "subtitulo": "Seu Apple novo no cartão de crédito.",
+    "selos": [
+      "iPhone",
+      "iPad",
+      "MacBook"
+    ],
+    "story": {
+      "topo": 70,
+      "zoom": 1
+    }
+  },
+  {
+    "id": "acessorios-apple",
+    "foto": "fotos/acessorios-apple.jpg",
+    "zoom": 1,
+    "topo": 540,
+    "kicker": "100% ORIGINAIS",
+    "titulo1": "Acessórios",
+    "titulo2": "Originais Apple",
+    "subtitulo": "Cabo e fonte USB-C originais e lacrados.",
+    "selos": [
+      "Cabo USB-C 60W",
+      "Fonte 20W",
+      "Kit completo"
+    ],
+    "story": {
+      "topo": 760,
+      "zoom": 1
+    }
+  },
+  {
+    "id": "linha-apple",
+    "foto": "fotos/linha-apple.jpg",
+    "zoom": 1,
+    "topo": 230,
+    "kicker": "PRONTA ENTREGA",
+    "titulo1": "Toda linha",
+    "titulo2": "Apple",
+    "subtitulo": "iPad, AirPods, AirTag e Pencil lacrados.",
+    "selos": [
+      "Pronta entrega",
+      "Lacrados",
+      "Garantia Apple"
+    ],
+    "story": {
+      "topo": 560,
+      "zoom": 1
+    }
+  },
+  {
+    "id": "garmin",
+    "foto": "fotos/garmin.jpg",
+    "zoom": 1,
+    "topo": 240,
+    "kicker": "OFERTA ESPECIAL",
+    "titulo1": "Garmin",
+    "titulo2": "Lacrados",
+    "subtitulo": "Forerunner e Vívoactive para treino e dia a dia.",
+    "selos": [
+      "Lacrados",
+      "GPS",
+      "Corrida e fitness"
+    ],
+    "story": {
+      "topo": 520,
+      "zoom": 1
+    }
   }
 ]

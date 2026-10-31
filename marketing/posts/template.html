@@ -100,7 +100,14 @@
   foto.style.width = `${(p.zoom || 1) * 1080}px`;
   foto.style.top = `${p.topo ?? 0}px`;
   // Foto descida: funde a borda de cima no fundo desfocado
-  if ((p.topo ?? 0) > 0) foto.style.webkitMaskImage = 'linear-gradient(180deg, transparent 0, #000 220px)';
+  // Foto menor que a arte: funde as bordas de cima/baixo no fundo desfocado
+  foto.onload = () => {
+    const alturaArte = post.offsetHeight, topo = p.topo ?? 0, base = topo + foto.offsetHeight;
+    const cima = topo > 0 ? 'transparent 0, #000 220px' : '#000 0';
+    const baixo = base < alturaArte ? '#000 calc(100% - 220px), transparent 100%' : '#000 100%';
+    foto.style.webkitMaskImage = `linear-gradient(180deg, ${cima}, ${baixo})`;
+    foto.dataset.pronta = '1';
+  };
   document.getElementById('kicker').textContent = p.kicker || 'OFERTA ESPECIAL';
   document.getElementById('t1').textContent = p.titulo1;
   document.getElementById('t2').textContent = p.titulo2 || '';

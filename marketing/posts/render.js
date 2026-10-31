@@ -22,7 +22,7 @@ const altura = story ? 1920 : 1350;
     await page.addInitScript(data => { window.POST = data; }, post);
     await page.goto('file://' + path.join(dir, 'template.html'), { waitUntil: 'networkidle' });
     await page.evaluate(() => document.fonts.ready);
-    await page.waitForFunction(() => document.getElementById('foto').complete);
+    await page.waitForFunction(() => document.getElementById('foto').dataset.pronta);
     const saida = path.join(dir, 'out', `${post.id}${story ? '-story' : ''}.png`);
     await page.locator('#post').screenshot({ path: saida });
     console.log('ok', saida);
