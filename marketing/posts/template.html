@@ -35,8 +35,8 @@
 
   .topo { position: absolute; top: 34px; left: 0; right: 0; text-align: center; }
   .logo { font-family: "Montserrat", sans-serif; font-weight: 200; line-height: .9; color: #f2f2f2; }
-  .logo .l1 { font-size: 66px; letter-spacing: .14em; padding-left: .14em; }
-  .logo .l2 { font-size: 27px; letter-spacing: .2em; padding-left: .2em; font-weight: 300; margin-top: 2px; }
+  .logo .l1 { font-size: 50px; letter-spacing: .14em; padding-left: .14em; }
+  .logo .l2 { font-size: 21px; letter-spacing: .2em; padding-left: .2em; font-weight: 300; margin-top: 2px; }
 
   .kicker { margin-top: 46px; font-size: 21px; font-weight: 600; letter-spacing: .38em; padding-left: .38em; color: var(--texto-suave); }
   .titulo { margin-top: 18px; font-family: "Fjalla One", sans-serif; font-weight: 400; line-height: 1.02; letter-spacing: .01em; text-transform: uppercase; }
@@ -51,9 +51,9 @@
     justify-content: center; white-space: nowrap; }
   .titulo.linha .t2 { margin-left: .25em; }
   .titulo.linha .t2 { background: none; color: #fff; filter: none; text-shadow: 0 4px 24px rgba(0,0,0,.35); }
-  .sub { margin-top: 22px; font-size: 27px; font-weight: 600; color: #f4f4f4; text-shadow: 0 2px 12px rgba(0,0,0,.5); }
+  .sub { margin-top: 10px; font-size: 27px; font-weight: 600; color: #f4f4f4; text-shadow: 0 2px 12px rgba(0,0,0,.5); }
 
-  .pills { margin-top: 26px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; padding: 0 60px; }
+  .pills { margin-top: 18px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; padding: 0 60px; }
   .pill { background: var(--pill-bg); border: 1.5px solid var(--pill-borda); border-radius: 999px;
     padding: 11px 24px; font-size: 19px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
     backdrop-filter: blur(6px); }
@@ -64,7 +64,13 @@
     font-size: 28px; font-weight: 700; letter-spacing: .02em; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
   /* Stories 1080x1920: texto e botão fora das áreas cobertas pela interface do Instagram */
   .story { --h: 1920px; }
-  .story .topo { top: 230px; }
+  .story .topo { top: 160px; }
+  .story .logo .l1 { font-size: 66px; }
+  .story .logo .l2 { font-size: 27px; }
+  .story .kicker { margin-top: 110px; font-size: 24px; }
+  .story .sub { font-size: 34px; margin-top: 14px; }
+  .story .pills { margin-top: 24px; gap: 16px; }
+  .story .pill { font-size: 23px; padding: 13px 28px; }
   .story .cta { bottom: 250px; }
   .story .sombra { background:
       linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.6) 28%, rgba(0,0,0,.2) 42%, rgba(0,0,0,0) 52%),

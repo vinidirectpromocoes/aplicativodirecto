@@ -79,11 +79,11 @@
     "id": "acessorios-apple",
     "foto": "fotos/acessorios-apple.jpg",
     "zoom": 1,
-    "topo": 430,
+    "topo": 470,
     "kicker": "100% ORIGINAIS",
     "titulo1": "Acessórios",
     "titulo2": "Originais Apple",
-    "subtitulo": "Originais e lacrados. Carregue com segurança.",
+    "subtitulo": "Cabo USB-C 60W e fonte USB-C 20W originais.",
     "selos": [
       "Originais",
       "Lacrados",
@@ -91,14 +91,8 @@
     ],
     "story": {
       "zoom": 1.3,
-      "topo": 640
-    },
-    "estilo": "v2",
-    "esfumado": 120,
-    "lista": [
-      "Cabo USB-C 60W (1m)",
-      "Fonte USB-C 20W"
-    ]
+      "topo": 660
+    }
   },
   {
     "id": "linha-apple",
@@ -108,7 +102,7 @@
     "kicker": "PRONTA ENTREGA",
     "titulo1": "Toda linha",
     "titulo2": "Apple",
-    "subtitulo": "Lacrados e com garantia Apple.",
+    "subtitulo": "iPad, AirPods, AirTag e Pencil lacrados.",
     "selos": [
       "Pronta entrega",
       "Lacrados",
@@ -116,41 +110,26 @@
     ],
     "story": {
       "zoom": 1,
-      "topo": 610
-    },
-    "estilo": "v2",
-    "esfumado": 160,
-    "lista": [
-      "iPad",
-      "AirPods",
-      "AirTag",
-      "Apple Pencil"
-    ]
+      "topo": 560
+    }
   },
   {
     "id": "garmin",
     "foto": "fotos/garmin.jpg",
-    "zoom": 1,
-    "topo": 420,
+    "zoom": 1.15,
+    "topo": 460,
     "kicker": "OFERTA ESPECIAL",
     "titulo1": "Garmin",
     "titulo2": "Lacrados",
-    "subtitulo": "GPS e monitor de treino no seu pulso.",
+    "subtitulo": "Forerunner e Vívoactive: GPS e treino no pulso.",
     "selos": [
       "Lacrados",
       "GPS",
       "Corrida e fitness"
     ],
     "story": {
-      "zoom": 1,
+      "zoom": 1.35,
       "topo": 640
-    },
-    "estilo": "v2",
-    "esfumado": 160,
-    "lista": [
-      "Forerunner 165",
-      "Forerunner 170 Music",
-      "Vívoactive 5 e 6"
-    ]
+    }
   }
 ]
