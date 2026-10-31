@@ -56,6 +56,13 @@
     background: var(--cta-bg); color: var(--cta-texto); border-radius: 999px;
     padding: 18px 38px 18px 28px; display: flex; align-items: center; gap: 16px; white-space: nowrap;
     font-size: 28px; font-weight: 700; letter-spacing: .02em; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  /* Stories 1080x1920: texto e botão fora das áreas cobertas pela interface do Instagram */
+  .story { --h: 1920px; }
+  .story .topo { top: 230px; }
+  .story .cta { bottom: 250px; }
+  .story .sombra { background:
+      linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.6) 28%, rgba(0,0,0,.2) 42%, rgba(0,0,0,0) 52%),
+      linear-gradient(0deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 30%); }
   .cta svg { width: 40px; height: 40px; flex: none; }
 </style>
 </head>
@@ -85,6 +92,7 @@
 <script>
   // Dados injetados pelo render.js em window.POST
   const p = window.POST;
+  if (p.formato === 'story') document.documentElement.classList.add('story');
   const post = document.getElementById('post');
   document.getElementById('fundo').style.backgroundImage = `url("${p.foto}")`;
   const foto = document.getElementById('foto');

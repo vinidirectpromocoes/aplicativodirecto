@@ -12,7 +12,11 @@
       "Lacrado",
       "Garantia Apple",
       "Brindes"
-    ]
+    ],
+    "story": {
+      "topo": 70,
+      "zoom": 1
+    }
   },
   {
     "id": "ipad-11",
@@ -27,7 +31,11 @@
       "Lacrado",
       "Garantia Apple",
       "Brindes"
-    ]
+    ],
+    "story": {
+      "topo": 260,
+      "zoom": 1
+    }
   },
   {
     "id": "macbook-neo",
@@ -42,6 +50,10 @@
       "Lacrado",
       "Garantia Apple",
       "256GB"
-    ]
+    ],
+    "story": {
+      "topo": 550,
+      "zoom": 1
+    }
   }
 ]

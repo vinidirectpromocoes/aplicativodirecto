@@ -28,6 +28,10 @@ cd marketing/posts
 # 3. ajuste "topo" (px, desloca a foto para baixo/cima) e "zoom" para enquadrar o produto
 node render.js            # gera todos em out/
 node render.js <id>       # gera só um
+node render.js --story    # versões stories 1080x1920 (enquadramento no bloco "story" de cada post)
 ```
+
+Stories: mesmo layout do feed, com texto começando abaixo de 230px e o botão do WhatsApp
+250px acima da base, para não ficarem sob a interface do Instagram.
 
 Sempre confira o PNG gerado: texto não pode cobrir o produto principal.
