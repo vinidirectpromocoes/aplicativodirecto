@@ -78,8 +78,8 @@
   {
     "id": "acessorios-apple",
     "foto": "fotos/acessorios-apple.jpg",
-    "zoom": 1,
-    "topo": 470,
+    "zoom": 1.045,
+    "topo": -3,
     "kicker": "100% ORIGINAIS",
     "titulo1": "Acessórios",
     "titulo2": "Originais Apple",
@@ -90,8 +90,8 @@
       "Kit completo"
     ],
     "story": {
-      "zoom": 1.3,
-      "topo": 660
+      "zoom": 1.48,
+      "topo": 0
     }
   },
   {
@@ -115,9 +115,9 @@
   },
   {
     "id": "garmin",
-    "foto": "fotos/garmin.jpg",
-    "zoom": 1.15,
-    "topo": 460,
+    "foto": "fotos/garmin.png",
+    "zoom": 1,
+    "topo": 0,
     "kicker": "OFERTA ESPECIAL",
     "titulo1": "Garmin",
     "titulo2": "Lacrados",
@@ -128,8 +128,9 @@
       "Corrida e fitness"
     ],
     "story": {
-      "zoom": 1.35,
-      "topo": 640
+      "foto": "fotos/garmin-story.png",
+      "zoom": 1.002,
+      "topo": 0
     }
   }
 ]
