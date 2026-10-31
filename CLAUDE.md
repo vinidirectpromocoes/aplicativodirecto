@@ -41,9 +41,15 @@ Stories: mesmo layout do feed, com texto começando abaixo de 230px e o botão d
 Fotos de fornecedor/print: recorte antes (tire barra do celular, logos e preços de outras lojas,
 textos sobrepostos) e salve em fotos/. Legendas e copy de anúncio ficam em `legendas.md`.
 
-Layout "v2" (`"estilo": "v2"` no posts.json), preferido para posts novos: fundo preto,
-sombreamento em degradê preto suave em cima e embaixo (sem escurecer o produto no meio), título no
-topo, produto no meio, e na base uma lista de modelos (`"lista"`) + selos logo acima do botão.
-Nos stories o texto começa em 170px e é maior. Use `"esfumado"` (px) para a borda da foto sumir no preto.
+Layout "v2" (`"estilo": "v2"`), preferido para posts novos — premium e minimalista:
+- fundo preto; sombreamento sutil (degradê preto leve e curto em cima e embaixo, nunca pesado);
+- logo no topo com boa distância da copy; título + frase em cima, sobre o preto;
+- produto numa faixa centralizada na largura toda (`"centralizar": true`), ocupando exatamente o
+  espaço entre a frase e a base; `"posicao"` ajusta o ponto focal (ex.: "center 30%") e
+  `"esfumado"` (px) a suavidade das bordas de cima/baixo da faixa;
+- base: lista de modelos (`"lista"`) + selos, logo acima do botão do WhatsApp;
+- stories: texto começa em 170px e é maior.
+Foto torta (ex.: caixas fotografadas na diagonal): endireite girando antes e recorte só a área
+sem cantos vazios.
 
 Sempre confira o PNG gerado: texto não pode cobrir o produto principal.

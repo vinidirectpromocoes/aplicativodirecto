@@ -69,8 +69,9 @@
      detalhes (lista + selos) na base, logo acima do botão */
   .v2 .fundo { background: #000 !important; filter: none; }
   .v2 .sombra { background:
-      linear-gradient(180deg, rgba(0,0,0,.92) 0%, rgba(0,0,0,.7) 14%, rgba(0,0,0,.3) 28%, rgba(0,0,0,0) 38%),
-      linear-gradient(0deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.75) 14%, rgba(0,0,0,.3) 26%, rgba(0,0,0,0) 36%); }
+      linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.2) 12%, rgba(0,0,0,0) 22%),
+      linear-gradient(0deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.2) 12%, rgba(0,0,0,0) 22%); }
+  .v2 .kicker { margin-top: 78px; }
   .base { position: absolute; left: 0; right: 0; bottom: 124px; text-align: center; display: none; }
   .v2 .base { display: block; }
   .v2 .topo .pills { display: none; }
@@ -79,13 +80,10 @@
   .lista .ponto { color: rgba(255,255,255,.45); margin: 0 12px; }
   .base .pills { margin-top: 18px; }
 
-  .v2.story .sombra { background:
-      linear-gradient(180deg, rgba(0,0,0,.92) 0%, rgba(0,0,0,.7) 18%, rgba(0,0,0,.3) 30%, rgba(0,0,0,0) 40%),
-      linear-gradient(0deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.88) 18%, rgba(0,0,0,.55) 28%, rgba(0,0,0,0) 42%); }
   .v2.story .topo { top: 170px; }
   .v2.story .logo .l1 { font-size: 80px; }
   .v2.story .logo .l2 { font-size: 32px; }
-  .v2.story .kicker { margin-top: 52px; font-size: 25px; }
+  .v2.story .kicker { margin-top: 100px; font-size: 25px; }
   .v2.story .titulo .t1 { font-size: var(--t1, 118px); }
   .v2.story .titulo .t2 { font-size: var(--t2, 118px); }
   .v2.story .sub { font-size: 32px; margin-top: 26px; }
@@ -134,17 +132,32 @@
   else fundo.style.backgroundImage = `url("${p.foto}")`;
   const foto = document.getElementById('foto');
   foto.src = p.foto;
-  foto.style.width = `${(p.zoom || 1) * 1080}px`;
+  if (p.altura) foto.style.height = `${p.altura}px`;
+  else foto.style.width = `${(p.zoom || 1) * 1080}px`;
   foto.style.top = `${p.topo ?? 0}px`;
   // Foto menor que a arte: funde as bordas de cima/baixo no fundo desfocado
-  foto.onload = () => {
+  foto.onload = async () => {
+    await document.fonts.ready;
+    // Faixa: a foto ocupa a largura toda e exatamente o espaço livre entre o texto
+    // de cima e o de baixo (recorte por object-fit, ponto focal em "posicao")
+    if (p.centralizar) {
+      const caixa = post.getBoundingClientRect(), folga = p.folga ?? 30;
+      const cima = document.getElementById('sub').getBoundingClientRect().bottom - caixa.top + folga;
+      const ref = document.querySelector(p.estilo === 'v2' ? '.base' : '.cta').getBoundingClientRect().top - caixa.top - folga;
+      Object.assign(foto.style, { width: '1080px', height: `${Math.round(ref - cima)}px`,
+        objectFit: 'cover', objectPosition: p.posicao || 'center' });
+      p.topo = Math.round(cima);
+      foto.style.top = `${p.topo}px`;
+    }
     const alturaArte = post.offsetHeight, topo = p.topo ?? 0, base = topo + foto.offsetHeight;
     const e = p.esfumado ?? 220;
     const cima = topo > 0 ? `transparent 0, #000 ${e}px` : '#000 0';
     const baixo = base < alturaArte ? `#000 calc(100% - ${e}px), transparent 100%` : '#000 100%';
     const mascaras = [`linear-gradient(180deg, ${cima}, ${baixo})`];
     // Foto mais estreita que a arte: funde também as laterais
-    if (foto.offsetWidth < post.offsetWidth) mascaras.push('linear-gradient(90deg, transparent 0, #000 120px, #000 calc(100% - 120px), transparent 100%)');
+    if (p.centralizar) mascaras[0] = `linear-gradient(180deg, transparent 0, #000 ${e}px, #000 calc(100% - ${e}px), transparent 100%)`;
+    const lado = p.centralizar ? e : 120;
+    if (foto.offsetWidth < post.offsetWidth) mascaras.push(`linear-gradient(90deg, transparent 0, #000 ${lado}px, #000 calc(100% - ${lado}px), transparent 100%)`);
     foto.style.webkitMaskImage = mascaras.join(', ');
     foto.style.webkitMaskComposite = 'source-in';
     foto.dataset.pronta = '1';
