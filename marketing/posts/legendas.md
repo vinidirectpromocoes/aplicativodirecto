@@ -118,3 +118,51 @@ Toque em "Enviar mensagem" e veja os modelos disponíveis hoje. 📲
 **Descrição:** Garantia Apple e até 18x no cartão
 **Botão (CTA):** Enviar mensagem (WhatsApp)
 **Objetivo sugerido:** Mensagens (clique para WhatsApp), público em Fortaleza + 15 km, 20 a 50 anos, interesses Apple / iPhone / tecnologia.
+
+---
+
+## iPhone 17 Pro Max 256GB
+
+iPhone 17 Pro Max 256GB lacrado na Vini iPhones 📱🔥
+
+🔵 Azul • 🟠 Laranja • ⚪ Prata
+
+✅ Lacrado
+✅ 256GB de armazenamento
+💳 Parcele em até 18x no crédito*
+
+Escolha a sua cor e garanta o seu antes que acabe!
+
+📲 WhatsApp: (85) 98433-0011
+
+*Verificar taxas.
+
+#iPhone17ProMax #iPhone17Pro #iPhone #Apple #iPhoneLacrado #ViniiPhones #Fortaleza #iPhoneFortaleza
+
+## Cabo e Fonte Originais
+
+Cabo e fonte originais Apple, lacrados ⚡
+
+🔌 Fonte USB-C 20W
+🔌 Cabo USB-C 60W (1m)
+🔌 Cabo USB-C para Lightning (1m)
+
+Original faz diferença: carga segura e mais vida útil para a bateria do seu iPhone.
+
+📲 Peça pelo WhatsApp: (85) 98433-0011
+
+#CaboOriginal #FonteApple #CarregadorOriginal #USBC #Lightning #ViniiPhones #Fortaleza #Apple
+
+## Relógio Garmin Lacrado
+
+Relógio Garmin lacrado ⌚
+
+✅ Forerunner 165
+✅ Forerunner 170 Music
+✅ Vívoactive 5 e 6
+
+GPS, monitor de treino e saúde no pulso. Perfeito pra corrida, academia e dia a dia.
+
+📲 Garanta o seu pelo WhatsApp: (85) 98433-0011
+
+#Garmin #RelogioGarmin #Forerunner #Vivoactive #Smartwatch #Corrida #ViniiPhones #Fortaleza

@@ -19,6 +19,25 @@
     }
   },
   {
+    "id": "iphone-17-pro-max",
+    "foto": "fotos/iphone-17-pro-max.jpg",
+    "zoom": 1,
+    "topo": 0,
+    "kicker": "OFERTA ESPECIAL",
+    "titulo1": "iPhone 17 Pro Max",
+    "titulo2": "256GB",
+    "subtitulo": "Lacrado, nas cores azul, laranja e prata.",
+    "selos": [
+      "Lacrado",
+      "256GB",
+      "3 cores"
+    ],
+    "story": {
+      "zoom": 1.42,
+      "topo": 0
+    }
+  },
+  {
     "id": "ipad-11",
     "foto": "fotos/ipad-11.jpg",
     "zoom": 1,
@@ -76,22 +95,22 @@
     }
   },
   {
-    "id": "acessorios-apple",
-    "foto": "fotos/acessorios-apple.jpg",
-    "zoom": 1.045,
-    "topo": -3,
+    "id": "cabo-fonte-originais",
+    "foto": "fotos/cabo-fonte.jpg",
+    "zoom": 1,
+    "topo": -350,
     "kicker": "100% ORIGINAIS",
-    "titulo1": "Acessórios",
-    "titulo2": "Originais Apple",
-    "subtitulo": "Cabo USB-C 60W e fonte USB-C 20W originais.",
+    "titulo1": "Cabo e Fonte",
+    "titulo2": "Originais",
+    "subtitulo": "Fonte USB-C 20W e cabos USB-C e Lightning lacrados.",
     "selos": [
       "Originais",
       "Lacrados",
-      "Kit completo"
+      "Apple"
     ],
     "story": {
-      "zoom": 1.48,
-      "topo": 0
+      "zoom": 1,
+      "topo": -100
     }
   },
   {
@@ -119,11 +138,11 @@
     "zoom": 1,
     "topo": 0,
     "kicker": "OFERTA ESPECIAL",
-    "titulo1": "Garmin",
-    "titulo2": "Lacrados",
-    "subtitulo": "Forerunner e Vívoactive: GPS e treino no pulso.",
+    "titulo1": "Relógio Garmin",
+    "titulo2": "Lacrado",
+    "subtitulo": "Forerunner e Vívoactive com GPS e treino no pulso.",
     "selos": [
-      "Lacrados",
+      "Lacrado",
       "GPS",
       "Corrida e fitness"
     ],

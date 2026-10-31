@@ -30,7 +30,7 @@ baixo, centralizada sobre a foto real do produto:
 
 Foto: sempre foto real dos produtos, ocupando a arte inteira, escurecida no topo para leitura.
 Posts aprovados (não mexer sem pedido): iPhone 17, iPad 11, MacBook Neo, Perfumes Originais,
-Acessórios Originais Apple, Toda Linha Apple e Garmin Lacrados. Produto visível
+Toda Linha Apple. Em revisão: iPhone 17 Pro Max, Cabo e Fonte Originais, Relógio Garmin Lacrado. Produto visível
 abaixo dos selos. Tom: premium, limpo, sem excesso de elementos, sem emojis na arte.
 
 ## Como gerar posts
