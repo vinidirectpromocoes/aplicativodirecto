@@ -58,22 +58,24 @@
   },
   {
     "id": "parcelamento-12x",
-    "foto": "fotos/iphone-17.jpg",
-    "zoom": 1,
-    "topo": -90,
+    "foto": "fotos/maquininha.jpg",
+    "zoom": 0.58,
+    "topo": 430,
     "kicker": "FACILITAMOS PRA VOCÊ",
-    "titulo1": "Parcele em",
-    "titulo2": "até 12x",
-    "subtitulo": "Seu Apple novo no cartão de crédito.",
+    "titulo1": "Parcele em até",
+    "titulo2": "12x",
+    "subtitulo": "Seu celular novo nos cartões de crédito.",
     "selos": [
       "iPhone",
       "iPad",
       "MacBook"
     ],
     "story": {
-      "topo": 70,
-      "zoom": 1
-    }
+      "zoom": 0.72,
+      "topo": 640
+    },
+    "fundo": "radial-gradient(ellipse at 50% 70%, #3a3a3c 0%, #1c1c1e 60%, #111 100%)",
+    "tamanhoTitulo2": 150
   },
   {
     "id": "acessorios-apple",

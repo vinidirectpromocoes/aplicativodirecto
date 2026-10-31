@@ -94,7 +94,9 @@
   const p = window.POST;
   if (p.formato === 'story') document.documentElement.classList.add('story');
   const post = document.getElementById('post');
-  document.getElementById('fundo').style.backgroundImage = `url("${p.foto}")`;
+  const fundo = document.getElementById('fundo');
+  if (p.fundo) { fundo.style.background = p.fundo; fundo.style.filter = 'none'; }
+  else fundo.style.backgroundImage = `url("${p.foto}")`;
   const foto = document.getElementById('foto');
   foto.src = p.foto;
   foto.style.width = `${(p.zoom || 1) * 1080}px`;
@@ -105,7 +107,11 @@
     const alturaArte = post.offsetHeight, topo = p.topo ?? 0, base = topo + foto.offsetHeight;
     const cima = topo > 0 ? 'transparent 0, #000 220px' : '#000 0';
     const baixo = base < alturaArte ? '#000 calc(100% - 220px), transparent 100%' : '#000 100%';
-    foto.style.webkitMaskImage = `linear-gradient(180deg, ${cima}, ${baixo})`;
+    const mascaras = [`linear-gradient(180deg, ${cima}, ${baixo})`];
+    // Foto mais estreita que a arte: funde também as laterais
+    if (foto.offsetWidth < post.offsetWidth) mascaras.push('linear-gradient(90deg, transparent 0, #000 120px, #000 calc(100% - 120px), transparent 100%)');
+    foto.style.webkitMaskImage = mascaras.join(', ');
+    foto.style.webkitMaskComposite = 'source-in';
     foto.dataset.pronta = '1';
   };
   document.getElementById('kicker').textContent = p.kicker || 'OFERTA ESPECIAL';
