@@ -23,32 +23,34 @@
   .post { position: relative; width: var(--w); height: var(--h); overflow: hidden; }
 
   /* Fundo: a mesma foto desfocada preenche áreas vazias quando a foto é reposicionada */
-  .fundo { position: absolute; inset: -60px; background-size: cover; background-position: center; filter: blur(40px) brightness(.3); }
+  .fundo { position: absolute; inset: -60px; background-size: cover; background-position: center; filter: blur(40px) brightness(.55); }
   .foto { position: absolute; left: 50%; transform: translateX(-50%); display: block; }
 
   /* Escurecimento para leitura do texto (topo forte, base leve) */
   .sombra { position: absolute; inset: 0; pointer-events: none;
     background:
-      linear-gradient(180deg, #000 0%, rgba(0,0,0,.88) 12%, rgba(0,0,0,.55) 26%, rgba(0,0,0,.15) 38%, rgba(0,0,0,0) 46%),
-      linear-gradient(0deg, #000 0%, rgba(0,0,0,.75) 9%, rgba(0,0,0,.3) 18%, rgba(0,0,0,0) 26%);
+      linear-gradient(180deg, rgba(0,0,0,.78) 0%, rgba(0,0,0,.55) 22%, rgba(0,0,0,.18) 40%, rgba(0,0,0,0) 52%),
+      linear-gradient(0deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,0) 22%);
   }
 
-  .topo { position: absolute; top: 20px; left: 0; right: 0; text-align: center; }
+  .topo { position: absolute; top: 34px; left: 0; right: 0; text-align: center; }
   .logo { font-family: "Montserrat", sans-serif; font-weight: 200; line-height: .9; color: #f2f2f2; }
-  .logo .l1 { font-size: 50px; letter-spacing: .14em; padding-left: .14em; }
-  .logo .l2 { font-size: 20px; letter-spacing: .2em; padding-left: .2em; font-weight: 300; margin-top: 2px; }
+  .logo .l1 { font-size: 66px; letter-spacing: .14em; padding-left: .14em; }
+  .logo .l2 { font-size: 27px; letter-spacing: .2em; padding-left: .2em; font-weight: 300; margin-top: 2px; }
 
-  .kicker { margin-top: 74px; font-size: 21px; font-weight: 500; letter-spacing: .38em; padding-left: .38em; color: var(--texto-suave); }
+  .kicker { margin-top: 46px; font-size: 21px; font-weight: 500; letter-spacing: .38em; padding-left: .38em; color: var(--texto-suave); }
   .titulo { margin-top: 18px; font-weight: 800; line-height: .94; letter-spacing: -.01em; text-transform: uppercase; }
   .titulo .t1 { display: block; font-size: var(--t1, 96px); color: #fff; text-shadow: 0 4px 24px rgba(0,0,0,.35); }
   .titulo .t2 { display: block; font-size: var(--t2, 96px);
     background: linear-gradient(180deg, #ffffff 0%, #d9d9d9 40%, #9a9a9a 75%, #cfcfcf 100%);
     -webkit-background-clip: text; background-clip: text; color: transparent;
     filter: drop-shadow(0 4px 18px rgba(0,0,0,.35)); }
-  /* Título em uma linha: modelo + capacidade lado a lado (tamanho ajustado à largura) */
-  .titulo.linha { white-space: nowrap; }
-  .titulo.linha .t1, .titulo.linha .t2 { display: inline; }
-  .titulo.linha .t2 { margin-left: .22em; }
+  /* Título em uma linha, todo branco; ocupa a mesma altura das 2 linhas antigas para
+     não mexer no resto do layout (fonte reduz sozinha para caber em 940px) */
+  .titulo.linha { height: calc(var(--t1, 96px) * .94 * 2); display: flex; align-items: center;
+    justify-content: center; white-space: nowrap; }
+  .titulo.linha .t2 { margin-left: .25em; }
+  .titulo.linha .t2 { background: none; color: #fff; filter: none; text-shadow: 0 4px 24px rgba(0,0,0,.35); }
   .sub { margin-top: 22px; font-size: 27px; font-weight: 500; color: #f4f4f4; text-shadow: 0 2px 12px rgba(0,0,0,.5); }
 
   .pills { margin-top: 26px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; padding: 0 60px; }
@@ -62,23 +64,19 @@
     font-size: 28px; font-weight: 700; letter-spacing: .02em; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
   /* Stories 1080x1920: texto e botão fora das áreas cobertas pela interface do Instagram */
   .story { --h: 1920px; }
-  .story .topo { top: 170px; }
+  .story .topo { top: 230px; }
   .story .cta { bottom: 250px; }
   .story .sombra { background:
-      linear-gradient(180deg, #000 0%, rgba(0,0,0,.88) 14%, rgba(0,0,0,.55) 28%, rgba(0,0,0,.15) 38%, rgba(0,0,0,0) 45%),
-      linear-gradient(0deg, #000 0%, rgba(0,0,0,.8) 12%, rgba(0,0,0,.35) 22%, rgba(0,0,0,0) 32%); }
-  .story .titulo .t1, .story .titulo .t2 { font-size: 110px; }
-  .story .logo .l1 { font-size: 58px; }
-  .story .logo .l2 { font-size: 23px; }
+      linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.6) 28%, rgba(0,0,0,.2) 42%, rgba(0,0,0,0) 52%),
+      linear-gradient(0deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 30%); }
   .cta svg { width: 40px; height: 40px; flex: none; }
 
   /* Layout "v2": fundo preto, degradê suave em cima e embaixo, título no topo e
      detalhes (lista + selos) na base, logo acima do botão */
   .v2 .fundo { background: #000 !important; filter: none; }
   .v2 .sombra { background:
-      linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.2) 12%, rgba(0,0,0,0) 22%),
-      linear-gradient(0deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.2) 12%, rgba(0,0,0,0) 22%); }
-  .v2 .kicker { margin-top: 78px; }
+      linear-gradient(180deg, rgba(0,0,0,.92) 0%, rgba(0,0,0,.7) 14%, rgba(0,0,0,.3) 28%, rgba(0,0,0,0) 38%),
+      linear-gradient(0deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.75) 14%, rgba(0,0,0,.3) 26%, rgba(0,0,0,0) 36%); }
   .base { position: absolute; left: 0; right: 0; bottom: 124px; text-align: center; display: none; }
   .v2 .base { display: block; }
   .v2 .topo .pills { display: none; }
@@ -87,10 +85,13 @@
   .lista .ponto { color: rgba(255,255,255,.45); margin: 0 12px; }
   .base .pills { margin-top: 18px; }
 
+  .v2.story .sombra { background:
+      linear-gradient(180deg, rgba(0,0,0,.92) 0%, rgba(0,0,0,.7) 18%, rgba(0,0,0,.3) 30%, rgba(0,0,0,0) 40%),
+      linear-gradient(0deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.88) 18%, rgba(0,0,0,.55) 28%, rgba(0,0,0,0) 42%); }
   .v2.story .topo { top: 170px; }
   .v2.story .logo .l1 { font-size: 80px; }
   .v2.story .logo .l2 { font-size: 32px; }
-  .v2.story .kicker { margin-top: 100px; font-size: 25px; }
+  .v2.story .kicker { margin-top: 52px; font-size: 25px; }
   .v2.story .titulo .t1 { font-size: var(--t1, 118px); }
   .v2.story .titulo .t2 { font-size: var(--t2, 118px); }
   .v2.story .sub { font-size: 32px; margin-top: 26px; }
@@ -140,30 +141,16 @@
   else fundo.style.backgroundImage = `url("${p.foto}")`;
   const foto = document.getElementById('foto');
   foto.src = p.foto;
-  if (p.altura) foto.style.height = `${p.altura}px`;
-  else foto.style.width = `${(p.zoom || 1) * 1080}px`;
+  foto.style.width = `${(p.zoom || 1) * 1080}px`;
   foto.style.top = `${p.topo ?? 0}px`;
   // Foto menor que a arte: funde as bordas de cima/baixo no fundo desfocado
   foto.onload = async () => {
     await document.fonts.ready;
-    // Título em uma linha: reduz a fonte até caber em 940px
-    const tit = document.querySelector('.titulo');
-    if (tit.classList.contains('linha')) {
-      const ts = [document.getElementById('t1'), document.getElementById('t2')];
+    const ts = [document.getElementById('t1'), document.getElementById('t2')];
+    if (document.querySelector('.titulo').classList.contains('linha')) {
       let tam = parseFloat(getComputedStyle(ts[0]).fontSize);
-      const largura = () => ts.reduce((s, t) => s + t.getBoundingClientRect().width, 0);
+      const largura = () => ts.reduce((s, t) => s + t.getBoundingClientRect().width, 0) + tam * .25;
       while (largura() > 940 && tam > 40) { tam -= 2; ts.forEach(t => t.style.fontSize = tam + 'px'); }
-    }
-    // Faixa: a foto ocupa a largura toda e exatamente o espaço livre entre o texto
-    // de cima e o de baixo (recorte por object-fit, ponto focal em "posicao")
-    if (p.centralizar) {
-      const caixa = post.getBoundingClientRect(), folga = p.folga ?? 30;
-      const cima = document.getElementById('sub').getBoundingClientRect().bottom - caixa.top + folga;
-      const ref = document.querySelector(p.estilo === 'v2' ? '.base' : '.cta').getBoundingClientRect().top - caixa.top - folga;
-      Object.assign(foto.style, { width: '1080px', height: `${Math.round(ref - cima)}px`,
-        objectFit: 'cover', objectPosition: p.posicao || 'center' });
-      p.topo = Math.round(cima);
-      foto.style.top = `${p.topo}px`;
     }
     const alturaArte = post.offsetHeight, topo = p.topo ?? 0, base = topo + foto.offsetHeight;
     const e = p.esfumado ?? 220;
@@ -171,9 +158,7 @@
     const baixo = base < alturaArte ? `#000 calc(100% - ${e}px), transparent 100%` : '#000 100%';
     const mascaras = [`linear-gradient(180deg, ${cima}, ${baixo})`];
     // Foto mais estreita que a arte: funde também as laterais
-    if (p.centralizar) mascaras[0] = `linear-gradient(180deg, transparent 0, #000 ${e}px, #000 calc(100% - ${e}px), transparent 100%)`;
-    const lado = p.centralizar ? e : 120;
-    if (foto.offsetWidth < post.offsetWidth) mascaras.push(`linear-gradient(90deg, transparent 0, #000 ${lado}px, #000 calc(100% - ${lado}px), transparent 100%)`);
+    if (foto.offsetWidth < post.offsetWidth) mascaras.push('linear-gradient(90deg, transparent 0, #000 120px, #000 calc(100% - 120px), transparent 100%)');
     foto.style.webkitMaskImage = mascaras.join(', ');
     foto.style.webkitMaskComposite = 'source-in';
     foto.dataset.pronta = '1';

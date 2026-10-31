@@ -14,7 +14,7 @@
       "Brindes"
     ],
     "story": {
-      "topo": -10,
+      "topo": 70,
       "zoom": 1
     }
   },
@@ -33,7 +33,7 @@
       "Brindes"
     ],
     "story": {
-      "topo": 170,
+      "topo": 260,
       "zoom": 1
     }
   },
@@ -59,6 +59,8 @@
   {
     "id": "acessorios-apple",
     "foto": "fotos/acessorios-apple.jpg",
+    "zoom": 1,
+    "topo": 430,
     "kicker": "100% ORIGINAIS",
     "titulo1": "Acessórios",
     "titulo2": "Originais Apple",
@@ -68,18 +70,22 @@
       "Lacrados",
       "Kit completo"
     ],
+    "story": {
+      "zoom": 1.3,
+      "topo": 640
+    },
     "estilo": "v2",
-    "esfumado": 70,
+    "esfumado": 120,
     "lista": [
       "Cabo USB-C 60W (1m)",
       "Fonte USB-C 20W"
-    ],
-    "centralizar": true,
-    "posicao": "center 60%"
+    ]
   },
   {
     "id": "linha-apple",
     "foto": "fotos/linha-apple.jpg",
+    "zoom": 1,
+    "topo": 330,
     "kicker": "PRONTA ENTREGA",
     "titulo1": "Toda linha",
     "titulo2": "Apple",
@@ -89,20 +95,24 @@
       "Lacrados",
       "Garantia Apple"
     ],
+    "story": {
+      "zoom": 1,
+      "topo": 610
+    },
     "estilo": "v2",
-    "esfumado": 70,
+    "esfumado": 160,
     "lista": [
       "iPad",
       "AirPods",
       "AirTag",
       "Apple Pencil"
-    ],
-    "centralizar": true,
-    "posicao": "center 30%"
+    ]
   },
   {
     "id": "garmin",
     "foto": "fotos/garmin.jpg",
+    "zoom": 1,
+    "topo": 420,
     "kicker": "OFERTA ESPECIAL",
     "titulo1": "Garmin",
     "titulo2": "Lacrados",
@@ -112,34 +122,16 @@
       "GPS",
       "Corrida e fitness"
     ],
+    "story": {
+      "zoom": 1,
+      "topo": 640
+    },
     "estilo": "v2",
-    "esfumado": 70,
+    "esfumado": 160,
     "lista": [
       "Forerunner 165",
       "Forerunner 170 Music",
       "Vívoactive 5 e 6"
-    ],
-    "centralizar": true,
-    "posicao": "center 40%"
-  },
-  {
-    "id": "perfumes-originais",
-    "foto": "fotos/perfumes.jpg",
-    "zoom": 1,
-    "topo": 430,
-    "esfumado": 110,
-    "kicker": "OFERTA ESPECIAL",
-    "titulo1": "Perfumes",
-    "titulo2": "Originais",
-    "subtitulo": "Lacrados e com preço de oferta.",
-    "selos": [
-      "Miniaturas",
-      "Árabes",
-      "Nicho"
-    ],
-    "story": {
-      "topo": 600,
-      "zoom": 1
-    }
+    ]
   }
 ]

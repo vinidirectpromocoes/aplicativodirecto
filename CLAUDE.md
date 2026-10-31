@@ -12,16 +12,16 @@ Logo oficial e arte de parcelamento aprovada: `marketing/posts/referencia-parcel
 Referência aprovada: `marketing/posts/referencia-perfumes.png`. Todo post novo segue esta estrutura,
 de cima para baixo, centralizada sobre a foto real do produto:
 
-1. Logo "VINI / IPHONES" pequeno e bem no alto, em fonte fina (Montserrat 200/300), letras espaçadas.
+1. Logo "VINI / IPHONES" em fonte fina (Montserrat 200/300), letras espaçadas.
 2. Chamada pequena espaçada: `OFERTA ESPECIAL` (ou outra curta, sempre em caixa alta).
-3. Título em UMA linha, Plus Jakarta Sans 800, caixa alta: modelo em branco + capacidade/complemento
-   ao lado em degradê prateado (ex.: IPHONE 17 256GB, PERFUMES ORIGINAIS). A fonte reduz sozinha para caber.
+3. Título em UMA linha, sem quebra, TODO EM BRANCO, Plus Jakarta Sans 800, caixa alta: modelo +
+   capacidade ao lado (ex.: IPHONE 17 256GB, PERFUMES ORIGINAIS). A fonte reduz sozinha para caber.
 4. Subtítulo curto em uma linha (ex.: "Lacrado e com 1 ano de garantia Apple.").
 5. Até 3 selos em pílulas escuras translúcidas com borda clara (ex.: LACRADO, GARANTIA APPLE, BRINDES).
 6. Rodapé: pílula branca com ícone do WhatsApp e `GARANTA O SEU: (85) 98433-0011`.
 
-Foto: sempre foto real dos produtos, ocupando a arte inteira. Sombra PRETA (não cinza) em degradê,
-em cima e embaixo, sem cobrir o produto. Copy um pouco abaixo do logo, com respiro entre eles. Produto visível
+Foto: sempre foto real dos produtos, ocupando a arte inteira, escurecida no topo para leitura.
+Posts aprovados (não mexer sem pedido): iPhone 17, iPad 11, MacBook Neo e Perfumes Originais. Produto visível
 abaixo dos selos. Tom: premium, limpo, sem excesso de elementos, sem emojis na arte.
 
 ## Como gerar posts
@@ -36,8 +36,11 @@ node render.js <id>       # gera só um
 node render.js --story    # versões stories 1080x1920 (enquadramento no bloco "story" de cada post)
 ```
 
-Stories: mesmo layout do feed, com o logo começando em 170px e o botão do WhatsApp
+Stories: mesmo layout do feed, com texto começando abaixo de 230px e o botão do WhatsApp
 250px acima da base, para não ficarem sob a interface do Instagram.
+
+Arte pronta (ex.: perfumes, feita fora do gerador): para trocar só o título, apague o texto antigo
+(fotos/perfumes-arte-sem-titulo.png) e use `node titulo-sobre-arte.js <arte> <saida> "<TÍTULO>" <centroY>`.
 
 Fotos de fornecedor/print: recorte antes (tire barra do celular, logos e preços de outras lojas,
 textos sobrepostos) e salve em fotos/. Legendas e copy de anúncio ficam em `legendas.md`.
