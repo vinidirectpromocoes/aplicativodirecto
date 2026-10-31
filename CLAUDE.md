@@ -41,4 +41,9 @@ Stories: mesmo layout do feed, com texto começando abaixo de 230px e o botão d
 Fotos de fornecedor/print: recorte antes (tire barra do celular, logos e preços de outras lojas,
 textos sobrepostos) e salve em fotos/. Legendas e copy de anúncio ficam em `legendas.md`.
 
+Layout "v2" (`"estilo": "v2"` no posts.json), preferido para posts novos: fundo preto,
+sombreamento em degradê preto suave em cima e embaixo (sem escurecer o produto no meio), título no
+topo, produto no meio, e na base uma lista de modelos (`"lista"`) + selos logo acima do botão.
+Nos stories o texto começa em 170px e é maior. Use `"esfumado"` (px) para a borda da foto sumir no preto.
+
 Sempre confira o PNG gerado: texto não pode cobrir o produto principal.
