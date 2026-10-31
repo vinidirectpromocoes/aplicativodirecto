@@ -1,0 +1,47 @@
+[
+  {
+    "id": "iphone-17",
+    "foto": "fotos/iphone-17.jpg",
+    "zoom": 1,
+    "topo": -90,
+    "kicker": "OFERTA ESPECIAL",
+    "titulo1": "iPhone 17",
+    "titulo2": "256GB",
+    "subtitulo": "Lacrado e com 1 ano de garantia Apple.",
+    "selos": [
+      "Lacrado",
+      "Garantia Apple",
+      "Brindes"
+    ]
+  },
+  {
+    "id": "ipad-11",
+    "foto": "fotos/ipad-11.jpg",
+    "zoom": 1,
+    "topo": 40,
+    "kicker": "OFERTA ESPECIAL",
+    "titulo1": "iPad 11",
+    "titulo2": "128GB | 256GB",
+    "subtitulo": "Lacrado, 1 ano de garantia Apple + brindes.",
+    "selos": [
+      "Lacrado",
+      "Garantia Apple",
+      "Brindes"
+    ]
+  },
+  {
+    "id": "macbook-neo",
+    "foto": "fotos/macbook-neo.jpg",
+    "zoom": 1,
+    "topo": 260,
+    "kicker": "OFERTA ESPECIAL",
+    "titulo1": "MacBook Neo",
+    "titulo2": "256GB",
+    "subtitulo": "Lacrado e com 1 ano de garantia Apple.",
+    "selos": [
+      "Lacrado",
+      "Garantia Apple",
+      "256GB"
+    ]
+  }
+]
