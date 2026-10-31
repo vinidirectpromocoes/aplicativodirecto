@@ -39,9 +39,6 @@ node render.js --story    # versões stories 1080x1920 (enquadramento no bloco "
 Stories: mesmo layout do feed, com texto começando abaixo de 230px e o botão do WhatsApp
 250px acima da base, para não ficarem sob a interface do Instagram.
 
-Arte pronta (ex.: perfumes, feita fora do gerador): para trocar só o título, apague o texto antigo
-(fotos/perfumes-arte-sem-titulo.png) e use `node titulo-sobre-arte.js <arte> <saida> "<TÍTULO>" <centroY> "<CHAMADA>" "<FRASE>"`.
-
 Fotos de fornecedor/print: recorte antes (tire barra do celular, logos e preços de outras lojas,
 textos sobrepostos) e salve em fotos/. Legendas e copy de anúncio ficam em `legendas.md`.
 

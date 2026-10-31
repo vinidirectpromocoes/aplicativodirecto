@@ -57,6 +57,25 @@
     }
   },
   {
+    "id": "perfumes-originais",
+    "foto": "fotos/perfumes.jpg",
+    "zoom": 1,
+    "topo": -460,
+    "kicker": "OFERTA ESPECIAL",
+    "titulo1": "Perfumes",
+    "titulo2": "Originais",
+    "subtitulo": "Lacrados e com preço de oferta.",
+    "selos": [
+      "Miniaturas",
+      "Árabes",
+      "Nicho"
+    ],
+    "story": {
+      "zoom": 1,
+      "topo": -170
+    }
+  },
+  {
     "id": "acessorios-apple",
     "foto": "fotos/acessorios-apple.jpg",
     "zoom": 1,
