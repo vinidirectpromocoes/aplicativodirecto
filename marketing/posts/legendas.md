@@ -43,16 +43,17 @@ Unidades limitadas. Chame agora e garanta o seu!
 
 #MacBookNeo #MacBook #Apple #MacBookLacrado #ViniiPhones #AppleFortaleza #Fortaleza #Notebook
 
-## Parcele em até 12x
+## Parcelamos em até 18x
 
-Seu Apple novo cabe no seu bolso 💳
+Seu iPhone novo em até 18x no crédito 💳
 
-Parcele iPhone, iPad e MacBook em até 12x no cartão de crédito e saia com o seu lacrado e com garantia Apple.
+Na Vini iPhones você parcela em até 18x no cartão e ainda pode usar o seu iPhone atual como parte do pagamento: a gente avalia o seu aparelho!
 
-Chama no WhatsApp, a gente simula as parcelas pra você agora:
-📲 (85) 98433-0011
+📲 Chama no WhatsApp e simule agora: (85) 98433-0011
 
-#ViniiPhones #iPhoneParcelado #iPhone #Apple #Fortaleza #iPhoneFortaleza #AppleFortaleza
+*Consulte as taxas do parcelamento.
+
+#ViniiPhones #iPhoneParcelado #iPhone #Apple #TrocaDeiPhone #Fortaleza #iPhoneFortaleza #AppleFortaleza
 
 ## Acessórios Originais Apple
 
@@ -102,18 +103,18 @@ Procurando produto Apple original, lacrado e sem esperar semanas pela entrega? �
 Na Vini iPhones a linha Apple está a pronta entrega:
 ✅ iPad, AirPods, AirTag e Apple Pencil
 ✅ Lacrados, com garantia Apple
-✅ Parcelamento em até 12x no cartão
+✅ Parcelamento em até 18x no cartão
 
 Chame no WhatsApp, tire suas dúvidas e garanta o seu hoje mesmo. 👇
 
 **Texto principal (versão 2, objeção/confiança):**
 Comprar Apple pela internet dá medo? Com a gente você fala direto no WhatsApp, vê o produto lacrado e sai com garantia Apple de 1 ano.
 
-iPad, AirPods, AirTag e Pencil a pronta entrega. Parcele em até 12x.
+iPad, AirPods, AirTag e Pencil a pronta entrega. Parcele em até 18x e use seu iPhone atual na troca.
 
 Toque em "Enviar mensagem" e veja os modelos disponíveis hoje. 📲
 
 **Título:** Linha Apple lacrada a pronta entrega
-**Descrição:** Garantia Apple e até 12x no cartão
+**Descrição:** Garantia Apple e até 18x no cartão
 **Botão (CTA):** Enviar mensagem (WhatsApp)
 **Objetivo sugerido:** Mensagens (clique para WhatsApp), público em Fortaleza + 15 km, 20 a 50 anos, interesses Apple / iPhone / tecnologia.

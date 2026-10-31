@@ -1,8 +1,11 @@
 # Vini iPhones — contexto da marca
 
 Loja de produtos Apple lacrados (iPhone, iPad, MacBook, AirPods, acessórios originais),
-relógios Garmin lacrados e perfumes originais. Parcelamento em até 12x no cartão.
+relógios Garmin lacrados e perfumes originais. Parcelamento em até 18x no crédito (sempre com "*verificar taxas*")
+e avaliação do iPhone usado na troca.
 WhatsApp de vendas: (85) 98433-0011 (DDD 85, Fortaleza/CE). Idioma: português do Brasil.
+
+Logo oficial e arte de parcelamento aprovada: `marketing/posts/referencia-parcelamento-18x.png`.
 
 ## Padrão de post do Instagram (feed 1080x1350)
 
